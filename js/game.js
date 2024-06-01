@@ -26,13 +26,15 @@ function startGame(){
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
+    game.textAlign = 'end'
 
-    for (let i = 0; i < 10; i++) {
-        const element = 10[i];
-        game.fillText(emojis['X'], 0 * i, 0 * i)
+
+
+
+
+    for (let i = 1; i <= 10; i++) {
+        game.fillText(emojis['X'], elementsSize, elementsSize * i)
     }
-
-
 }
 
 
