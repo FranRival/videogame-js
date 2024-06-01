@@ -9,17 +9,21 @@ window.addEventListener('load', startGame)
 function startGame(){
 
     let canvasSize
-    canvas.setAttribute('width', canvasSize * .75)
-    canvas.setAttribute('width', canvasSize * .5)
+
+    if (window.innerHeight > window.innerWidth) {
+        canvasSize = window.innerWidth * .8
+    }else{
+        canvasSize = window.innerHeight * .8
+    }
+
+
+    canvas.setAttribute('width', canvasSize)
+    canvas.setAttribute('height', canvasSize)
 
     
-/*     game.fillRect(0,50,100,100)
-    game.clearRect(0,0,50,50) */
 
-
-/*     game.fillFont = '25px Verdana'
-    game.fillStyle = 'purple'
-    game.fillText('XXX', 100,100) */
+    const elementsSize = canvasSize / 10
+    console.log({canvasSize, elementsSize});
 }
 
 
