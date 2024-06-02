@@ -1,6 +1,4 @@
 
-//canvas en js
-
 const canvas = document.querySelector('#game')
 const game = canvas.getContext('2d')
 
@@ -21,21 +19,21 @@ function startGame(){
     canvas.setAttribute('height', canvasSize)
 
     
-
-    const elementsSize = canvasSize / 10
+    const elementsSize = (canvasSize / 10) -1
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
-    game.textAlign = 'end'
-
-
-
+    game.textAlign = 'center'
 
 
     for (let i = 1; i <= 10; i++) {
-        game.fillText(emojis['X'], elementsSize, elementsSize * i)
+
+        for (let z = 1; z < 11; z++) {
+            game.fillText(emojis['X'], elementsSize * i, elementsSize * z)
+        }
+
     }
 }
 
 
-//tamano del canvas y sus elementos
+//
