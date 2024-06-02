@@ -5,12 +5,12 @@ const game = canvas.getContext('2d')
 let canvasSize
 let elementsSize
 
-window.addEventListener('load', startGame)
+window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
 
 function startGame(){
 
-    setCanvasSize()
+
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
@@ -40,4 +40,6 @@ function setCanvasSize(){
 
     
     elementsSize = canvasSize / 10
+
+    startGame()
 }
