@@ -26,12 +26,8 @@ function startGame(){
     game.textAlign = 'center'
 
 
-    for (let i = 1; i <= 10; i++) {
-
-        for (let z = 1; z < 11; z++) {
-            game.fillText(emojis['X'], elementsSize * i, elementsSize * z)
-        }
-
+    for (let i = 1; i < 10; i++) {
+        game.fillText(emojis['X'], elementsSize, elementsSize * i)
     }
 }
 
