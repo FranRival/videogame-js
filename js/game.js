@@ -19,7 +19,11 @@ function startGame(){
 
     const map = maps[0] //es un string. convertir en un array
     const mapRoads = maps[0].trim().split('\n') //arreglo de arreglos
-    const mapRowCols = mapRoads.map(row => row.trim().split(''))
+    const mapRowCols = mapRoads.map(row => row.trim().split(''))//cada letra es un elemento.
+
+    //
+
+
     console.log({map, mapRoads, mapRowCols});
 
     //crear un nuevo arreglo.
@@ -29,7 +33,7 @@ function startGame(){
 
     for (let row = 1; row < 11; row++) {
         for (let column = 1; column < 11; column++){
-            game.fillText(emojis['X'], elementsSize * column, elementsSize * row)
+            game.fillText(mapRowCols[row][column], elementsSize * column, elementsSize * row)
         }
     }
 }
