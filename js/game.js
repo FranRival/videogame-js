@@ -8,17 +8,22 @@ let elementsSize
 window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
 
+
+
+
 function startGame(){
-
-
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
 
+    const map = maps[0]
+    console.log(map);
 
-    for (let i = 1; i < 11; i++) {
-        game.fillText(emojis['X'], elementsSize, elementsSize * i)
+    for (let row = 1; row < 11; row++) {
+        for (let column = 1; column < 11; column++){
+            game.fillText(emojis['X'], elementsSize * column, elementsSize * row)
+        }
     }
 }
 
@@ -43,3 +48,5 @@ function setCanvasSize(){
 
     startGame()
 }
+
+//arrays multidimensionales
