@@ -17,8 +17,8 @@ function startGame(){
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
 
-    const map = maps[0] //es un string. convertir en un array
-    const mapRoads = maps[0].trim().split('\n') //arreglo de arreglos
+    const map = maps[1] //es un string. convertir en un array
+    const mapRoads = map.trim().split('\n') //arreglo de arreglos
     const mapRowCols = mapRoads.map(row => row.trim().split(''))//cada letra es un elemento.
 
     //
@@ -31,8 +31,8 @@ function startGame(){
 
     //'modofokos and you fuck of' .splice (' ')
 
-    for (let row = 1; row < 11; row++) {
-        for (let column = 1; column < 11; column++){
+    for (let row = 1; row < 10; row++) {
+        for (let column = 1; column < 10; column++){
             game.fillText(emojis[mapRowCols[row - 1][column - 1]], elementsSize * column, elementsSize * row)
         }
     }
