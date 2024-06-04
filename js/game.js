@@ -17,8 +17,11 @@ function startGame(){
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
 
-    const map = maps[0]
+    const map = maps[0] //es un string. convertir en un array
+    const mapRoads = .split//arreglo de arreglos
     console.log(map);
+
+    //'modofokos and you fuck of' .splice (' ')
 
     for (let row = 1; row < 11; row++) {
         for (let column = 1; column < 11; column++){
