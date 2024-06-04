@@ -18,11 +18,12 @@ function startGame(){
     game.textAlign = 'center'
 
     const map = maps[0] //es un string. convertir en un array
-    const mapRoads = maps[0].trim().splice('\n') //arreglo de arreglos
-    console.log({map, mapRoads});
+    const mapRoads = maps[0].trim().split('\n') //arreglo de arreglos
+    const mapRowCols = mapRoads.map(row => row.trim().split(''))
+    console.log({map, mapRoads, mapRowCols});
 
     //crear un nuevo arreglo.
-    mapRoads.map(row => row.trim().splice(''))
+
 
     //'modofokos and you fuck of' .splice (' ')
 
