@@ -33,7 +33,7 @@ function startGame(){
 
     for (let row = 1; row < 11; row++) {
         for (let column = 1; column < 11; column++){
-            game.fillText(mapRowCols[row][column], elementsSize * column, elementsSize * row)
+            game.fillText(emojis[mapRowCols[row][column]], elementsSize * column, elementsSize * row)
         }
     }
 }
