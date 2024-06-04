@@ -19,6 +19,10 @@ function startGame(){
 
     const map = maps[0] //es un string. convertir en un array
     const mapRoads = maps[0].trim().splice('\n') //arreglo de arreglos
+    console.log({map, mapRoads});
+
+    //crear un nuevo arreglo.
+    mapRoads.map(row => row.trim().splice(''))
 
     //'modofokos and you fuck of' .splice (' ')
 
