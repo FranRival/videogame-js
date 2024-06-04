@@ -18,8 +18,7 @@ function startGame(){
     game.textAlign = 'center'
 
     const map = maps[0] //es un string. convertir en un array
-    const mapRoads = .split//arreglo de arreglos
-    console.log(map);
+    const mapRoads = maps[0].trim().splice('\n') //arreglo de arreglos
 
     //'modofokos and you fuck of' .splice (' ')
 
