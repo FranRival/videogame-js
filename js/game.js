@@ -17,47 +17,38 @@ function startGame(){
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
 
-    const map = maps[1] //es un string. convertir en un array
-    const mapRoads = map.trim().split('\n') //arreglo de arreglos
-    const mapRowCols = mapRoads.map(row => row.trim().split(''))//cada letra es un elemento.
-
-    //
+    const map = maps[1] 
+    const mapsRows = map.trim().split('\n') 
+    const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
 
-    console.log({map, mapRoads, mapRowCols});
+    mapRowCols.forEach(row => {
+        row.forEach(col =>{
 
-    //crear un nuevo arreglo.
+            console.log({row,col});
+        })
+    });
 
-
-    //'modofokos and you fuck of' .splice (' ')
-
-    for (let row = 1; row < 10; row++) {
+/*     for (let row = 1; row < 10; row++) {
         for (let column = 1; column < 10; column++){
             game.fillText(emojis[mapRowCols[row - 1][column - 1]], elementsSize * column, elementsSize * row)
         }
-    }
+    } */
 }
 
 
-//canvas responsive 
-
-function setCanvasSize(){
-    
-
+function setCanvasSize(){    
     if (window.innerHeight > window.innerWidth) {
         canvasSize = window.innerWidth * .8
     }else{
         canvasSize = window.innerHeight * .8
     }
-
-
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
 
-    
     elementsSize = canvasSize / 10
 
     startGame()
 }
 
-//arrays multidimensionales
+//refactor del mapa de juego
