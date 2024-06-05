@@ -24,7 +24,7 @@ function startGame(){
 
     mapRowCols.forEach(row => {
         row.forEach(col =>{
-
+            console.log(emojis[col]);
             console.log({row,col});
         })
     });
