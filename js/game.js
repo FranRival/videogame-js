@@ -25,8 +25,9 @@ function startGame(){
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
-            game.fillText(emoji, elementsSize * colI,0)
-            console.log({row, rowI,col,colI});
+            const posX = elementsSize * (colI + 1)
+            const posY = elementsSize * (rowI + 1)
+            game.fillText(emoji, posX,posY)
         })
     });
 
