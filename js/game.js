@@ -15,7 +15,6 @@ window.addEventListener('resize', setCanvasSize)
 
 
 
-
 function startGame(){
     console.log({canvasSize, elementsSize});
 
@@ -36,29 +35,12 @@ function startGame(){
         })
     });
 
-/*     for (let row = 1; row < 10; row++) {
-        for (let column = 1; column < 10; column++){
-            game.fillText(emojis[mapRowCols[row - 1][column - 1]], elementsSize * column, elementsSize * row)
-        }
-    } */
 }
 
 
-function setCanvasSize(){    
-    if (window.innerHeight > window.innerWidth) {
-        canvasSize = window.innerWidth * .8
-    }else{
-        canvasSize = window.innerHeight * .8
-    }
-    canvas.setAttribute('width', canvasSize)
-    canvas.setAttribute('height', canvasSize)
-
-    elementsSize = canvasSize / 10
-
-    startGame()
-}
 
 //eventos y botones
+
 
 btnUp.addEventListener('click', moveUp)
 btnLeft.addEventListener('click', moveLeft)
@@ -77,6 +59,22 @@ function moveRight(){
 }
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
+}
+
+
+
+function setCanvasSize(){    
+    if (window.innerHeight > window.innerWidth) {
+        canvasSize = window.innerWidth * .8
+    }else{
+        canvasSize = window.innerHeight * .8
+    }
+    canvas.setAttribute('width', canvasSize)
+    canvas.setAttribute('height', canvasSize)
+
+    elementsSize = canvasSize / 10
+
+    startGame()
 }
 
 
