@@ -32,7 +32,6 @@ function startGame(){
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
             game.fillText(emoji, posX,posY)
-            console.log('vagina');
         })
     });
 
@@ -47,16 +46,10 @@ btnRight.addEventListener('click', moveRight)
 btnDown.addEventListener('click', moveDown)
 
 function moveByKeys(event){
-    if (event.key == 'ArrowUp') {
-        moveUp()
-    } else if (event.key == 'ArrowLeft') {
-        moveLeft()
-    }else if (event.key == 'ArrowRight') {
-        moveRight()
-    }
-    else if (event.key == 'ArrowDown') {
-        moveDown()
-    }
+    if (event.key == 'ArrowUp') moveUp()
+    else if (event.key == 'ArrowLeft') moveLeft()
+    else if (event.key == 'ArrowRight') moveRight()
+    else if (event.key == 'ArrowDown') moveDown()
 }
 
 
