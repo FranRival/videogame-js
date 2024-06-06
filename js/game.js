@@ -32,6 +32,7 @@ function startGame(){
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
             game.fillText(emoji, posX,posY)
+            console.log('vagina');
         })
     });
 
