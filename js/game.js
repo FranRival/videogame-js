@@ -2,6 +2,11 @@
 const canvas = document.querySelector('#game')
 const game = canvas.getContext('2d')
 
+const btnUp = document.querySelector('#up')
+const btnDown = document.querySelector('#down')
+const btnLeft = document.querySelector('#left')
+const btnRight = document.querySelector('#right')
+
 let canvasSize
 let elementsSize
 
@@ -53,4 +58,25 @@ function setCanvasSize(){
     startGame()
 }
 
-//refactor del mapa de juego
+//eventos y botones
+
+btnUp.addEventListener('click', moveUp)
+btnLeft.addEventListener('click', moveLeft)
+btnRight.addEventListener('click', moveRight)
+btnDown.addEventListener('click', moveDown)
+
+
+function moveUp(){
+    console.log('Me quiero mover hacia arriba');
+}
+function moveLeft(){
+    console.log('Me quiero mover hacia izquierda');
+}
+function moveRight(){
+    console.log('Me quiero mover hacia derecha');
+}
+function moveDown(){
+    console.log('Me quiero mover hacia abajo');
+}
+
+
