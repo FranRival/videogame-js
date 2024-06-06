@@ -37,17 +37,17 @@ function startGame(){
 
 }
 
-
-
 //eventos y botones
 
-
+window.addEventListener('keydown', moveByKeys)
 btnUp.addEventListener('click', moveUp)
 btnLeft.addEventListener('click', moveLeft)
 btnRight.addEventListener('click', moveRight)
 btnDown.addEventListener('click', moveDown)
 
-
+function moveByKeys(event){
+    console.log(event);
+}
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 }
