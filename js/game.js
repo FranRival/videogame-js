@@ -2,10 +2,24 @@
 const canvas = document.querySelector('#game')
 const game = canvas.getContext('2d')
 
-const btnUp = document.querySelector('#up')
-const btnDown = document.querySelector('#down')
-const btnLeft = document.querySelector('#left')
-const btnRight = document.querySelector('#right')
+/* let btnUp = document.querySelector('#up')
+btnUp.addEventListener('click', moveUp)
+let btnDown = document.querySelector('#down')
+btnDown.addEventListener('click', moveDown)
+let btnLeft = document.querySelector('#left')
+btnLeft.addEventListener('click', moveLeft)
+let btnRight = document.querySelector('#right')
+btnRight.addEventListener('click', moveRight) */
+
+let btnUp = document.getElementById('up')
+btnUp.addEventListener('click', moveUp)
+let btnDown = document.getElementById('down')
+btnDown.addEventListener('click', moveDown)
+let btnLeft = document.getElementById('left')
+btnLeft.addEventListener('click', moveLeft)
+let btnRight = document.getElementById('right')
+btnRight.addEventListener('click', moveRight)
+
 
 let canvasSize
 let elementsSize
@@ -14,6 +28,7 @@ window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
 
 
+window.addEventListener('keydown', moveByKeys)
 
 function startGame(){
     console.log({canvasSize, elementsSize});
@@ -38,14 +53,7 @@ function startGame(){
 
 }
 
-//eventos y botones
 
-
-btnUp.addEventListener('click', moveUp)
-btnLeft.addEventListener('click', moveLeft)
-btnRight.addEventListener('click', moveRight)
-btnDown.addEventListener('click', moveDown)
-window.addEventListener('keydown', moveByKeys)
 
 /* function moveByKeys(event){
     if (event.key == 'ArrowUp') moveUp()
@@ -54,16 +62,8 @@ window.addEventListener('keydown', moveByKeys)
     else if (event.key == 'ArrowDown') moveDown()
 } */
 
-    function moveByKeys(event){
-        console.log('shiet');
-        if (event.key == "ArrowUp"){ moveUp()
-            console.log('vagina!');
-        }else if (event.key == "ArrowLeft"){ moveLeft()
-        }else if (event.key == "ArrowRight"){ moveRight()
-        }else if (event.key == "ArrowDown"){ moveDown()}
-    }
 
-
+    
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 }
@@ -76,6 +76,18 @@ function moveRight(){
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
 }
+
+
+
+function moveByKeys(event){
+        console.log('shiet');
+        if (event.key == "ArrowUp"){ moveUp()
+            console.log('modofoko shet');
+        }else if (event.key == "ArrowLeft"){ moveLeft()
+        }else if (event.key == "ArrowRight"){ moveRight()
+        }else if (event.key == "ArrowDown"){ moveDown()}
+}
+
 
 
 
