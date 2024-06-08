@@ -24,11 +24,14 @@ btnRight.addEventListener('click', moveRight)
 let canvasSize
 let elementsSize
 
+
+
 window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
-
-
 window.addEventListener('keydown', moveByKeys)
+
+
+
 
 function startGame(){
     console.log({canvasSize, elementsSize});
@@ -55,14 +58,6 @@ function startGame(){
 
 
 
-/* function moveByKeys(event){
-    if (event.key == 'ArrowUp') moveUp()
-    else if (event.key == 'ArrowLeft') moveLeft()
-    else if (event.key == 'ArrowRight') moveRight()
-    else if (event.key == 'ArrowDown') moveDown()
-} */
-
-
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
@@ -80,9 +75,7 @@ function moveDown(){
 
 
 function moveByKeys(event){
-        console.log('shiet');
         if (event.key == "ArrowUp"){ moveUp()
-            console.log('modofoko shet');
         }else if (event.key == "ArrowLeft"){ moveLeft()
         }else if (event.key == "ArrowRight"){ moveRight()
         }else if (event.key == "ArrowDown"){ moveDown()}
