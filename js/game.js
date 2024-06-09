@@ -55,6 +55,9 @@ function startGame(){
         })
     });
 
+
+    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+
 }
 
 
