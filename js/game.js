@@ -46,7 +46,9 @@ function startGame(){
 
 
             if (col == 'O') {
-                console.log({posX,posY});
+                playerPosition.x = posX
+                playerPosition.y = posY
+                console.log({playerPosition});
             }
 
             game.fillText(emoji, posX,posY)
