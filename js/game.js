@@ -2,29 +2,23 @@
 const canvas = document.querySelector('#game')
 const game = canvas.getContext('2d')
 
-/* let btnUp = document.querySelector('#up')
+const btnUp = document.getElementById('up')
 btnUp.addEventListener('click', moveUp)
-let btnDown = document.querySelector('#down')
+const btnDown = document.getElementById('down')
 btnDown.addEventListener('click', moveDown)
-let btnLeft = document.querySelector('#left')
+const btnLeft = document.getElementById('left')
 btnLeft.addEventListener('click', moveLeft)
-let btnRight = document.querySelector('#right')
-btnRight.addEventListener('click', moveRight) */
-
-let btnUp = document.getElementById('up')
-btnUp.addEventListener('click', moveUp)
-let btnDown = document.getElementById('down')
-btnDown.addEventListener('click', moveDown)
-let btnLeft = document.getElementById('left')
-btnLeft.addEventListener('click', moveLeft)
-let btnRight = document.getElementById('right')
+const btnRight = document.getElementById('right')
 btnRight.addEventListener('click', moveRight)
 
 
 let canvasSize
 let elementsSize
 
-
+const playerPosition = {
+    x: undefined,
+    y: undefined
+}
 
 window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
@@ -39,7 +33,7 @@ function startGame(){
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
 
-    const map = maps[1] 
+    const map = maps[0] 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
@@ -49,8 +43,13 @@ function startGame(){
             const emoji = emojis[col]
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
+
+
+            if (col == 'O') {
+                console.log({posX,posY});
+            }
+
             game.fillText(emoji, posX,posY)
-            console.log('girasoles alv');
         })
     });
 
@@ -99,3 +98,4 @@ function setCanvasSize(){
 }
 
 
+//player position
