@@ -65,6 +65,7 @@ function startGame(){
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
+    playerPosition.y -= elementsSize
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
