@@ -27,7 +27,6 @@ window.addEventListener('keydown', moveByKeys)
 
 function startGame(){
     console.log({canvasSize, elementsSize});
-
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
     const map = maps[0] 
@@ -36,6 +35,7 @@ function startGame(){
 
 
 
+    game.clearRect(0,0,canvasSize, canvasSize);
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
