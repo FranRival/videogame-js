@@ -49,7 +49,7 @@ function startGame(){
                     playerPosition.y = posY
                     console.log({playerPosition});
                     
-                }
+                }//encapsular con if es logica de programacion 
             }
 
             game.fillText(emoji, posX,posY)
@@ -74,17 +74,17 @@ function moveUp(){
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
-    playerPosition.y -= elementsSize
+    playerPosition.x -= elementsSize
     startGame()
 }
 function moveRight(){
     console.log('Me quiero mover hacia derecha');
-    playerPosition.y -= elementsSize
+    playerPosition.x += elementsSize
     startGame()
 }
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
-    playerPosition.y -= elementsSize
+    playerPosition.y += elementsSize
     startGame()
 }
 
