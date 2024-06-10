@@ -24,10 +24,6 @@ window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
 window.addEventListener('keydown', moveByKeys)
 
-/* game.clearRect(0,0,canvasSize,canvasSize) muy probably tengamos
-que crear una function con this modofoko. 
-ya intente colocar este codigo de manera estrategica pero en los demas, se borra alv el contneido de las bombas. se logra actualizar, y se borra la calavera.
- */
 
 function startGame(){
     console.log({canvasSize, elementsSize});
@@ -48,9 +44,12 @@ function startGame(){
 
 
             if (col == 'O') {
-                playerPosition.x = posX
-                playerPosition.y = posY
-                console.log({playerPosition});
+                if (!playerPosition.x && !playerPosition.y) {
+                    playerPosition.x = posX
+                    playerPosition.y = posY
+                    console.log({playerPosition});
+                    
+                }
             }
 
             game.fillText(emoji, posX,posY)
@@ -65,15 +64,13 @@ function startGame(){
 
 
 function movePlayer(){
-    game.clearRect(0,0,canvasSize,canvasSize)
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
-    
 }
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
     playerPosition.y -= elementsSize
-    movePlayer()
+    startGame()
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
