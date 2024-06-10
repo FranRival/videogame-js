@@ -64,6 +64,11 @@ function startGame(){
 
 
 
+function movePlayer(){
+    game.clearRect(0,0,canvasSize,canvasSize)
+    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+    
+}
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
