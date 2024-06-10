@@ -58,16 +58,12 @@ function startGame(){
     });
 
 
-
-    movePlayer()
-
-}
-
-
-function movePlayer(){
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 
 }
+
+
+
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
