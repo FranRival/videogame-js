@@ -70,7 +70,7 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 
-    if ((playerPosition.y - elementsSize) < elementsSize) { //aqui esta el truco
+    if ((playerPosition.y - elementsSize) < 0) { //aqui esta el truco
         console.log('OUT');
     }else{
         playerPosition.y -= elementsSize
@@ -78,9 +78,13 @@ function moveUp(){
     }
 }
 function moveLeft(){
-    console.log('Me quiero mover hacia izquierda');
-    playerPosition.x -= elementsSize
-    startGame()
+    if ((playerPosition.x - elementsSize) < elementsSize) {
+        console.log('OUT');
+    }else{
+        console.log('Me quiero mover hacia izquierda');
+        playerPosition.x -= elementsSize
+        startGame()
+    }
 }
 function moveRight(){
     console.log('Me quiero mover hacia derecha');
