@@ -26,7 +26,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-    console.log({canvasSize, elementsSize});
+   // console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
     const map = maps[0] 
@@ -47,9 +47,9 @@ function startGame(){
                 if (!playerPosition.x && !playerPosition.y) {
                     playerPosition.x = posX
                     playerPosition.y = posY
-                    console.log({playerPosition});
+                    //console.log({playerPosition});
                     
-                }//encapsular con if es logica de programacion 
+                }
             }
 
             game.fillText(emoji, posX,posY)
@@ -69,8 +69,13 @@ function movePlayer(){
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
-    playerPosition.y -= elementsSize
-    startGame()
+
+    if ((playerPosition.y - elementsSize) < 0) {
+        console.log('OUT');
+    }else{
+        playerPosition.y -= elementsSize
+        startGame()
+    }
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
@@ -116,4 +121,4 @@ function setCanvasSize(){
 }
 
 
-//limpieza de movimientos.
+//no salirse del map
