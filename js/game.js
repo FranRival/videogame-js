@@ -70,7 +70,7 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 
-    if ((playerPosition.y - elementsSize) < 0) {
+    if ((playerPosition.y - elementsSize) < elementsSize) { //aqui esta el truco
         console.log('OUT');
     }else{
         playerPosition.y -= elementsSize
