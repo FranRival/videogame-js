@@ -96,9 +96,13 @@ function moveRight(){
     }
 }
 function moveDown(){
-    console.log('Me quiero mover hacia abajo');
-    playerPosition.y += elementsSize
-    startGame()
+    if ((playerPosition.y + elementsSize) > canvasSize) {
+        console.log('OUT');
+    }else{
+        console.log('Me quiero mover hacia abajo');
+        playerPosition.y += elementsSize
+        startGame()
+    }
 }
 
 
