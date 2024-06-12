@@ -31,7 +31,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-   // console.log({canvasSize, elementsSize});
+    console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
     const map = maps[0] 
@@ -70,8 +70,8 @@ function movePlayer(){
     //necesitamos saber si hibo colision con el gift. tiene que colosionar en x y y.
 
     console.log('conooooooo');
-    const gifCOlisionEnX = playerPosition.x == playerPosition.x
-    const gifCOlisionEnY = playerPosition.y == playerPosition.y
+    const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
+    const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
     if (gifColision) {
