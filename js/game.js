@@ -61,29 +61,24 @@ function startGame(){
             game.fillText(emoji, posX,posY)
         })
     });
-
-
-    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
-
+    movePlayer()
 }
 
 
 
 function movePlayer(){
-
-
     //necesitamos saber si hibo colision con el gift. tiene que colosionar en x y y.
 
+    console.log('conooooooo');
     const gifCOlisionEnX = playerPosition.x == playerPosition.x
     const gifCOlisionEnY = playerPosition.y == playerPosition.y
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
-
 
     if (gifColision) {
         console.log('Subiste de nivel.');
     }
 
-    
+
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 }
 
