@@ -15,6 +15,11 @@ btnRight.addEventListener('click', moveRight)
 let canvasSize
 let elementsSize
 
+const giftPosition = {
+    x: undefined,
+    y: undefined,
+}
+
 const playerPosition = {
     x: undefined,
     y: undefined
@@ -47,9 +52,10 @@ function startGame(){
                 if (!playerPosition.x && !playerPosition.y) {
                     playerPosition.x = posX
                     playerPosition.y = posY
-                    //console.log({playerPosition});
-                    
                 }
+            }else if(col == 'I'){
+                giftPosition.x //porque verga aparece con el punto, la propiedad para colocar .x o .y?
+
             }
 
             game.fillText(emoji, posX,posY)
