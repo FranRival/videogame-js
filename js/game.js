@@ -54,8 +54,8 @@ function startGame(){
                     playerPosition.y = posY
                 }
             }else if(col == 'I'){
-                giftPosition.x //porque verga aparece con el punto, la propiedad para colocar .x o .y?
-
+                giftPosition.x = posX
+                giftPosition.y = posY
             }
 
             game.fillText(emoji, posX,posY)
@@ -70,19 +70,37 @@ function startGame(){
 
 
 function movePlayer(){
+
+
+    //necesitamos saber si hibo colision con el gift. tiene que colosionar en x y y.
+
+    const gifCOlisionEnX = playerPosition.x == playerPosition.x
+    const gifCOlisionEnY = playerPosition.y == playerPosition.y
+    const gifColision = gifCOlisionEnX && gifCOlisionEnY
+
+
+    if (gifColision) {
+        console.log('Subiste de nivel.');
+    }
+
+    
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 }
+
+
+
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
-
-    if ((playerPosition.y - elementsSize) < 0) { //aqui esta el truco
+    if ((playerPosition.y - elementsSize) < 0) { 
         console.log('OUT');
     }else{
         playerPosition.y -= elementsSize
         startGame()
     }
 }
+
+
 function moveLeft(){
     if ((playerPosition.x - elementsSize) < elementsSize) {
         console.log('OUT');
