@@ -25,6 +25,9 @@ const playerPosition = {
     y: undefined
 }
 
+const enemisPositions = [] //diferente a los corchetes.
+
+
 window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
 window.addEventListener('keydown', moveByKeys)
@@ -56,6 +59,11 @@ function startGame(){
             }else if(col == 'I'){
                 giftPosition.x = posX
                 giftPosition.y = posY
+            }else if (col=='X'){
+                enemisPositions.push({
+                    x: posX,
+                    y: posY
+                })
             }
 
             game.fillText(emoji, posX,posY)
@@ -67,9 +75,7 @@ function startGame(){
 
 
 function movePlayer(){
-    //necesitamos saber si hibo colision con el gift. tiene que colosionar en x y y.
-
-    console.log('conooooooo');
+    console.log('panoquia');
     const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
@@ -152,4 +158,4 @@ function setCanvasSize(){
 }
 
 
-//no salirse del map
+//detectando colisiones con arrays
