@@ -85,12 +85,17 @@ function movePlayer(){
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
-    if (gifColision) {
-        console.log('Subiste de nivel.');
+
+
+    const enemyColisioner = enemisPositions.find(enemy =>{
+        const enemyColisionX = enemy.x == playerPosition.x
+        const enemyColisionY =  enemy.y == playerPosition.y
+        return enemyColisionX && enemyColisionY
+    })
+
+    if (enemyColisioner) {
+        console.log('Chocaste contra un enemy.');
     }
-
-    const enemyColisioner = enemisPositions.find// parte de la programation es saber como bajar las modofokos things. por ejemplo en la linea 92. tenemos que saber si hubo colision. how i will do that? pregntando si coincide ubicaciones X y Y.
-
 
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 }
