@@ -25,7 +25,7 @@ const playerPosition = {
     y: undefined
 }
 
-const enemisPositions = [] //diferente a los corchetes.
+let enemisPositions = [] //diferente a los corchetes.
 
 
 window.addEventListener('load', setCanvasSize)
@@ -36,6 +36,8 @@ window.addEventListener('keydown', moveByKeys)
 
 //cada movimiento de la calavera dispara de nuevo el proceso de la funcion starGame
 //el problema, es que ahora son 180. se va duplicando. actualizando.
+//para solucionar, hay que limpiar el array. 
+//hay que hacerlo en la function stargmae. 
 function startGame(){
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
@@ -45,7 +47,7 @@ function startGame(){
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
 
-
+    enemisPositions = []
     game.clearRect(0,0,canvasSize, canvasSize);
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
