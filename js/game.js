@@ -80,7 +80,6 @@ function startGame(){
 
 
 function movePlayer(){
-    console.log('panoquia');
     const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
@@ -88,8 +87,8 @@ function movePlayer(){
 
 
     const enemyColisioner = enemisPositions.find(enemy =>{
-        const enemyColisionX = enemy.x == playerPosition.x
-        const enemyColisionY =  enemy.y == playerPosition.y
+        const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)
+        const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)
         return enemyColisionX && enemyColisionY
     })
 
