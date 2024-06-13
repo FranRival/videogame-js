@@ -33,6 +33,9 @@ window.addEventListener('resize', setCanvasSize)
 window.addEventListener('keydown', moveByKeys)
 
 
+
+//cada movimiento de la calavera dispara de nuevo el proceso de la funcion starGame
+//el problema, es que ahora son 180. se va duplicando. actualizando.
 function startGame(){
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
