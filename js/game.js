@@ -80,7 +80,7 @@ function startGame(){
 
 
 function subirNivel(){
-    console.log('Subiste Nivel');
+    console.log('vaaagina');
     level++
     startGame()
 }
@@ -91,9 +91,9 @@ function movePlayer(){
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
+
     if (gifColision) {
         subirNivel()
-
     }
 
 
