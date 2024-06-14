@@ -77,9 +77,9 @@ function startGame(){
 
 
 function movePlayer(){
-    const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
-    const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
-    const gifColision = gifCOlisionEnX && gifCOlisionEnY
+    const gifCOlisionEnX = playerPosition.x.toFixed(3) == giftPosition.x.toFixed(3)
+    const gifCOlisionEnY = playerPosition.y.toFixed(3) == giftPosition.y.toFixed(3)
+    const gifColision = gifCOlisionEnX && gifCOlisionEnY;
 
     if (gifColision) {
         levelWin()
@@ -102,7 +102,7 @@ function movePlayer(){
 
 
 function levelWin(){
-    console.log('SUbiste de nivel');
+    console.log('');
     level++
     startGame()
 }
