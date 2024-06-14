@@ -102,7 +102,7 @@ function movePlayer(){
 
 
 function levelWin(){
-    console.log('');
+    console.log('Subiste de nivel');
     level++
     startGame()
 }
