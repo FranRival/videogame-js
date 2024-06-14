@@ -39,6 +39,12 @@ function startGame(){
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
     const map = maps[level] 
+
+
+    if (!map) {
+        gameWin()
+    }
+
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
@@ -74,6 +80,10 @@ function startGame(){
 }
 
 
+function gameWin(){
+    console.log('Terminaste el juego');
+    return
+}
 
 
 function movePlayer(){
