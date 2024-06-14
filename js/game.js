@@ -14,6 +14,7 @@ btnRight.addEventListener('click', moveRight)
 
 let canvasSize
 let elementsSize
+let level = 0
 
 const giftPosition = {
     x: undefined,
@@ -25,7 +26,7 @@ const playerPosition = {
     y: undefined
 }
 
-let enemisPositions = [] //diferente a los corchetes.
+let enemisPositions = [] 
 
 
 window.addEventListener('load', setCanvasSize)
@@ -33,16 +34,11 @@ window.addEventListener('resize', setCanvasSize)
 window.addEventListener('keydown', moveByKeys)
 
 
-
-//cada movimiento de la calavera dispara de nuevo el proceso de la funcion starGame
-//el problema, es que ahora son 180. se va duplicando. actualizando.
-//para solucionar, hay que limpiar el array. 
-//hay que hacerlo en la function stargmae. 
 function startGame(){
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
-    const map = maps[0] 
+    const map = maps[level] 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
@@ -78,12 +74,23 @@ function startGame(){
 }
 
 
+function levelWin(){
+    console.log('SUbiste de nivel');
+    level++
+    startGame()
+}
+
 
 function movePlayer(){
     const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
+    if (gifColition) {
+        levelWin()
+    }else{
+        levelFail()
+    }
 
 
     const enemyColisioner = enemisPositions.find(enemy =>{
@@ -169,4 +176,5 @@ function setCanvasSize(){
 }
 
 
-//detectando colisiones con arrays
+//subiendo de nivel
+//subir al siguiente nivel por codigo. 
