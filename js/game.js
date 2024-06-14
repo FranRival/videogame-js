@@ -37,7 +37,7 @@ window.addEventListener('keydown', moveByKeys)
 function startGame(){
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
-    game.textAlign = 'center'
+    game.textAlign = 'end'
     const map = maps[level] 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
@@ -74,11 +74,6 @@ function startGame(){
 }
 
 
-function levelWin(){
-    console.log('SUbiste de nivel');
-    level++
-    startGame()
-}
 
 
 function movePlayer(){
@@ -105,6 +100,12 @@ function movePlayer(){
 }
 
 
+
+function levelWin(){
+    console.log('SUbiste de nivel');
+    level++
+    startGame()
+}
 
     
 function moveUp(){
