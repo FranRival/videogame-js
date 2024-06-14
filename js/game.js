@@ -14,6 +14,7 @@ btnRight.addEventListener('click', moveRight)
 
 let canvasSize
 let elementsSize
+let level = 0
 
 const giftPosition = {
     x: undefined,
@@ -42,7 +43,7 @@ function startGame(){
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
-    const map = maps[0] 
+    const map = maps[level] 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
@@ -78,12 +79,22 @@ function startGame(){
 }
 
 
+function subirNivel(){
+    console.log('Subiste Nivel');
+    level++
+    startGame()
+}
+
 
 function movePlayer(){
     const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
+    if (gifColision) {
+        subirNivel()
+
+    }
 
 
     const enemyColisioner = enemisPositions.find(enemy =>{
