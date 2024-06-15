@@ -84,16 +84,17 @@ function startGame(){
 function levelFail(){
     lives --
 
-    console.log(lives);
-
-    if (lives <= 0) {
+    if (lives > 0) {
+        console.log('Fallaste alv');//tenemos que hacer que la calavera reinicie sus coordenadas. 
+        playerPosition.x = undefined
+        playerPosition.y = undefined
+        startGame()
+    }else {
         level = 0
-        lives = 3
-            }
-
-         playerPosition.x = undefined
-         playerPosition.y = undefined
-         startGame()
+        playerPosition.x = undefined
+        playerPosition.y = undefined
+        startGame()
+    }
 }
 
 function gameWin(){
