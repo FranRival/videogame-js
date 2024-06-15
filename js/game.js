@@ -80,6 +80,13 @@ function startGame(){
 }
 
 
+function levelFail(){
+    console.log('Fallaste alv');//tenemos que hacer que la calavera reinicie sus coordenadas. 
+    playerPosition.x = undefined
+    playerPosition.y = undefined
+    startGame()
+}
+
 function gameWin(){
     console.log('Terminaste el juego');
     return
@@ -103,7 +110,7 @@ function movePlayer(){
     })
 
     if (enemyColisioner) {
-        console.log('Chocaste contra un enemy.');
+        levelFail()
     }
 
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
@@ -185,5 +192,4 @@ function setCanvasSize(){
 }
 
 
-//subiendo de nivel
-//subir al siguiente nivel por codigo. 
+//derrota. perdiendo vidas.
