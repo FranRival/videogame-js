@@ -15,6 +15,7 @@ btnRight.addEventListener('click', moveRight)
 let canvasSize
 let elementsSize
 let level = 0
+let lives = 3
 
 const giftPosition = {
     x: undefined,
@@ -81,10 +82,19 @@ function startGame(){
 
 
 function levelFail(){
-    console.log('Fallaste alv');//tenemos que hacer que la calavera reinicie sus coordenadas. 
-    playerPosition.x = undefined
-    playerPosition.y = undefined
-    startGame()
+    lives --
+
+    if (lives > 0) {
+        console.log('Fallaste alv');//tenemos que hacer que la calavera reinicie sus coordenadas. 
+        playerPosition.x = undefined
+        playerPosition.y = undefined
+        startGame()
+    }else {
+        level = 0
+        playerPosition.x = undefined
+        playerPosition.y = undefined
+        startGame()
+    }
 }
 
 function gameWin(){
