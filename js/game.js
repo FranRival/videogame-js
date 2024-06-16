@@ -86,7 +86,8 @@ function startGame(){
 
 function showLives(){
     spanLives.innerHTML = emojis['HEART']
-    Array(lives) //crear un array. no sabemos que tipo de elemento. string. o numero. o true. o false.
+    const heartArray = Array(lives).fill(emojis['HEART'])//crear un array. no sabemos que tipo de elemento. string. o numero. o true. o false.
+    console.log(heartArray);
 }
 
 function levelFail(){
