@@ -51,6 +51,7 @@ function startGame(){
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
+    showLives()
 
     enemisPositions = []
     game.clearRect(0,0,canvasSize, canvasSize);
@@ -83,9 +84,13 @@ function startGame(){
 }
 
 
+function showLives(){
+    spanLives.innerHTML = emojis['HEART']
+    Array(lives) //crear un array. no sabemos que tipo de elemento. string. o numero. o true. o false.
+}
+
 function levelFail(){
     lives --
-    spanLives.innerHTML = emojis['HEART']
 
     if (lives > 0) {
         console.log('Fallaste alv');//otro commit basura y vacio
