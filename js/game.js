@@ -11,6 +11,8 @@ btnLeft.addEventListener('click', moveLeft)
 const btnRight = document.getElementById('right')
 btnRight.addEventListener('click', moveRight)
 
+const spanLives = document.querySelector('#lives')
+
 
 let canvasSize
 let elementsSize
@@ -83,9 +85,10 @@ function startGame(){
 
 function levelFail(){
     lives --
+    spanLives.innerHTML = emojis['HEART']
 
     if (lives > 0) {
-        console.log('Fallaste alv');//tenemos que hacer que la calavera reinicie sus coordenadas. 
+        console.log('Fallaste alv');//otro commit basura y vacio
         playerPosition.x = undefined
         playerPosition.y = undefined
         startGame()
@@ -202,4 +205,5 @@ function setCanvasSize(){
 }
 
 
-//derrota. perdiendo vidas.
+//sistema de vidas y corazones.
+
