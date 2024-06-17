@@ -12,12 +12,17 @@ const btnRight = document.getElementById('right')
 btnRight.addEventListener('click', moveRight)
 
 const spanLives = document.querySelector('#lives')
+const spanTime = document.querySelector('#tiempo')
 
 
 let canvasSize
 let elementsSize
 let level = 0
 let lives = 3
+
+let timeStar
+let timePlayer
+let timeInterval
 
 const giftPosition = {
     x: undefined,
@@ -44,8 +49,16 @@ function startGame(){
     const map = maps[level] 
 
 
+    ///thos modofoko if es para inicializar el game
     if (!map) {
         gameWin()
+    }
+
+
+    if (!timeStar) {
+        timeStar = Date.now() - timeStar
+
+        timeInterval = setInterval(showTime, 100)
     }
 
     const mapsRows = map.trim().split('\n') 
@@ -89,6 +102,10 @@ function showLives(){
 
     spanLives.innerHTML = '' //yo sha no fucking undestand
     heartArray.forEach(heart => spanLives.append(heart))
+}
+
+function showTime(){
+    spanTime.innerHTML = Date.now() - timeStar
 }
 
 function levelFail(){
