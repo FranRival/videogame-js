@@ -109,24 +109,23 @@ function showTime(){
 }
 
 function levelFail(){
+    console.log('Chocaste con un nivel');
     lives --
 
-    if (lives > 0) {
-        console.log('Fallaste alv');//otro commit basura y vacio
-        playerPosition.x = undefined
-        playerPosition.y = undefined
-        startGame()
-    }else {
+    if (lives <= 0) {
         level = 0
-        playerPosition.x = undefined
-        playerPosition.y = undefined
-        startGame()
+        lives = 3
+        timeStar = undefined   
     }
+
+    playerPosition.x = undefined
+    playerPosition.y = undefined
+    startGame()
 }
 
 function gameWin(){
     console.log('Terminaste el juego');
-    return
+    clearInterval(timeInterval)
 }
 
 
