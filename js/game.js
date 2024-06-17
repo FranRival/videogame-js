@@ -49,6 +49,7 @@ function startGame(){
     const map = maps[level] 
 
 
+
     ///thos modofoko if es para inicializar el game
     if (!map) {
         gameWin()
@@ -101,11 +102,6 @@ function showLives(){
 
     spanLives.innerHTML = '' //yo sha no fucking undestand
     heartArray.forEach(heart => spanLives.append(heart))
-}
-
-function showTime(){
-   // spanTime.innerHTML = Date.now() - timeStar
-    spanTime.innerHTML = Date.now() - timeStar
 }
 
 function levelFail(){
