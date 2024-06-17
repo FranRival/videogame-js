@@ -104,6 +104,10 @@ function showLives(){
     heartArray.forEach(heart => spanLives.append(heart))
 }
 
+function showTime(){
+    spanTime.innerHTML = Date.now() - timeStar
+}
+
 function levelFail(){
     lives --
 
