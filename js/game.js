@@ -212,5 +212,8 @@ function setCanvasSize(){
 }
 
 
-//sistema de vidas y corazones.
+//sistema de tiempo y puntajes
 
+const intervalilloALV = setInterval(() => console.log('Ajua putitos!'), 1000)
+
+clearInterval(intervalilloALV)
