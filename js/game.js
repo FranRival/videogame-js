@@ -56,8 +56,7 @@ function startGame(){
 
 
     if (!timeStar) {
-        timeStar = Date.now() - timeStar
-
+        timeStar = Date.now()
         timeInterval = setInterval(showTime, 100)
     }
 
@@ -105,6 +104,7 @@ function showLives(){
 }
 
 function showTime(){
+   // spanTime.innerHTML = Date.now() - timeStar
     spanTime.innerHTML = Date.now() - timeStar
 }
 
