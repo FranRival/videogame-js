@@ -52,7 +52,7 @@ function startGame(){
 
     ///thos modofoko if es para inicializar el game
     if (!map) {
-        gameWin()
+        gameWin()//sospecho que aqui hay otro error.
     }
 
 
@@ -100,7 +100,7 @@ function startGame(){
 function showLives(){
     const heartArray = Array(lives).fill(emojis['HEART'])
 
-    spanLives.innerHTML = '' //yo sha no fucking undestand
+    spanLives.innerHTML = ''
     heartArray.forEach(heart => spanLives.append(heart))
 }
 
@@ -135,7 +135,7 @@ function movePlayer(){
     const gifColision = gifCOlisionEnX && gifCOlisionEnY;
 
     if (gifColision) {
-        levelWin() ///////aqui hay un mistake
+        level++
     }
 
 
