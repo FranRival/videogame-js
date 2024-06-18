@@ -228,8 +228,8 @@ function setCanvasSize(){
 }
 
 
-//sistema de tiempo y puntajes
 
-const intervalilloALV = setInterval(() => console.log('Ajua putitos!'), 1000)
 
-clearInterval(intervalilloALV)
+//localstorage: almacenamiento local. 
+//para tener un historial de winnning. busquemos si en local storage haya una variable de record. 
+//para saber si existe un record. sino, ser el winning.
