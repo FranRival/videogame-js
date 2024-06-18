@@ -150,8 +150,8 @@ function gameWin(){
 
 function levelWin(){
     console.log('Subiste de nivel');
-    clearInterval(timeInterval)
-
+    level++
+    startGame()
 }
 
 
