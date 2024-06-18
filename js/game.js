@@ -126,6 +126,18 @@ function levelFail(){
 function gameWin(){
     console.log('Terminaste el juego');
     clearInterval(timeInterval)
+
+    const recordTime = localStorage.getItem('record_time')
+    console.log({recordTime});
+}
+
+
+
+
+function levelWin(){
+    console.log('Subiste de nivel');
+    clearInterval(timeInterval)
+
 }
 
 
@@ -152,16 +164,6 @@ function movePlayer(){
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 }
 
-
-
-function levelWin(){
-    console.log('Subiste de nivel');
-    clearInterval(timeInterval)
-
-
-    const recordTime = localStorage.getItem('record_time')
-    console.log({recordTime});
-}
 
     
 function moveUp(){
