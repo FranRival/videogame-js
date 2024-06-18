@@ -135,7 +135,7 @@ function movePlayer(){
     const gifColision = gifCOlisionEnX && gifCOlisionEnY;
 
     if (gifColision) {
-        levelWin()
+        levelWin() ///////aqui hay un mistake
     }
 
 
@@ -156,8 +156,11 @@ function movePlayer(){
 
 function levelWin(){
     console.log('Subiste de nivel');
-    level++
-    startGame()
+    clearInterval(timeInterval)
+
+
+    const recordTime = localStorage.getItem('record_time')
+    console.log({recordTime});
 }
 
     
