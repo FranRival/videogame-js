@@ -128,9 +128,9 @@ function gameWin(){
     clearInterval(timeInterval)
 
     const recordTime = localStorage.getItem('record_time')
+    const playerTime = Date.now() - timeStar
 
-    if (recordTime) { //sho sha no entiendo nada
-        const playerTime = Date.now - timeStar
+    if (recordTime) { 
         if (recordTime >= playerTime) {
             localStorage.setItem('record_time', playerTime)
             console.log('Superaste el record');
@@ -142,7 +142,7 @@ function gameWin(){
     }
 
 
-    console.log({recordTime});
+    console.log({recordTime, playerTime});
 }
 
 
