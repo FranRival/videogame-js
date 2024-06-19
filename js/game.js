@@ -13,7 +13,7 @@ btnRight.addEventListener('click', moveRight)
 
 const spanLives = document.querySelector('#lives')
 const spanTime = document.querySelector('#tiempo')
-
+const pResult = document.querySelector('#result');
 
 let canvasSize
 let elementsSize
@@ -254,7 +254,3 @@ function setCanvasSize(){
 
 
 
-
-//localstorage: almacenamiento local. 
-//para tener un historial de winnning. busquemos si en local storage haya una variable de record. 
-//para saber si existe un record. sino, ser el winning.
