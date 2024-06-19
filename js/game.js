@@ -143,8 +143,6 @@ function gameWin(){
     }else{
         localStorage.setItem('record_time', playerTime)
     }
-
-
     console.log({recordTime, playerTime});
 }
 
