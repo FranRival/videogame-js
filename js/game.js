@@ -135,6 +135,7 @@ function gameWin() {
     const playerTime = Date.now() - timeStar;
 
     console.log('-------- ' + recordTime);/////aqui demuestra que es NaN
+    console.log('----------l ' + playerTime);
   
     if (recordTime) {
       if (recordTime >= playerTime) {
