@@ -146,7 +146,7 @@ function gameWin(){
     console.log({recordTime, playerTime});
 }
 
-
+ 
 
 
 function levelWin(){
