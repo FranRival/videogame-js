@@ -53,6 +53,7 @@ function startGame(){
     ///thos modofoko if es para inicializar el game
     if (!map) {
         gameWin()//sospecho que aqui hay otro error.
+        return
     }
 
 
@@ -63,11 +64,13 @@ function startGame(){
 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
+    console.log({map, mapsRows, mapRowCols});
 
     showLives()
 
     enemisPositions = []
     game.clearRect(0,0,canvasSize, canvasSize);
+
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
@@ -161,7 +164,7 @@ function movePlayer(){
     const gifColision = gifCOlisionEnX && gifCOlisionEnY;
 
     if (gifColision) {
-        level++
+        levelWin()
     }
 
 
@@ -237,12 +240,17 @@ function setCanvasSize(){
     }else{
         canvasSize = window.innerHeight * .8
     }
+
+
+    canvasSize = Number(canvasSize.toFixed(0))
+
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
 
     elementsSize = canvasSize / 10
-    
 
+    playerPosition.x = undefined
+    playerPosition.y = undefined
     startGame()
 }
 
