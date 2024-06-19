@@ -14,7 +14,7 @@ btnRight.addEventListener('click', moveRight)
 const spanLives = document.querySelector('#lives')
 const spanTime = document.querySelector('#tiempo')
 const pResult = document.querySelector('#result');
-const spanRecord=document.querySelector('#record');
+const spanRecord = document.querySelector('#record');
 
 let canvasSize
 let elementsSize
@@ -133,22 +133,27 @@ function gameWin() {
   
     const recordTime = localStorage.getItem('record_time');
     const playerTime = Date.now() - timeStar;
+
+    console.log('-------- ' + recordTime);/////aqui demuestra que es NaN
   
     if (recordTime) {
       if (recordTime >= playerTime) {
         localStorage.setItem('record_time', playerTime);
         pResult.innerHTML = 'SUPERASTE EL RECORD :)';
       } else {
-        pResult.innerHTML = 'lo siento, no superaste el records :(';
+        pResult.innerHTML = 'no superaste el record';
       }
     } else {
       localStorage.setItem('record_time', playerTime);
-      pResult.innerHTML = 'Primera vez? Muy bien, pero ahora trata de superar tu tiempo :)';
+      pResult.innerHTML = '--------)';
     }
+
+    
   
     console.log({recordTime, playerTime});
   }
 
+ 
 
 function levelWin(){
     console.log('Subiste de nivel');
