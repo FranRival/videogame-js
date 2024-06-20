@@ -44,7 +44,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-    console.log({canvasSize, elementsSize});
+    //console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
     const map = maps[level] 
@@ -65,7 +65,7 @@ function startGame(){
 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
-    console.log({map, mapsRows, mapRowCols});
+   // console.log({map, mapsRows, mapRowCols});
 
     showLives()
 
@@ -130,13 +130,11 @@ function levelFail(){
 function gameWin() {
     console.log('¡Terminaste el juego!');
     clearInterval(timeInterval);
+    console.log('vmodofokoooo');
   
     const recordTime = +localStorage.getItem('record_time');
     const playerTime = Date.now() - timeStar;
 
-    console.log('-------- ' + recordTime);/////aqui demuestra que es NaN
-    console.log('----------l ' + playerTime);
-  
     if (recordTime) {
       if (recordTime >= playerTime) {
         localStorage.setItem('record_time', playerTime);
