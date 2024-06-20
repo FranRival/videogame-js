@@ -131,7 +131,7 @@ function gameWin() {
     console.log('¡Terminaste el juego!');
     clearInterval(timeInterval);
   
-    const recordTime = localStorage.getItem('record_time');
+    const recordTime = +localStorage.getItem('record_time');
     const playerTime = Date.now() - timeStar;
 
     console.log('-------- ' + recordTime);/////aqui demuestra que es NaN
