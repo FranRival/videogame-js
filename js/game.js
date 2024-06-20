@@ -135,6 +135,7 @@ function levelFail(){
 function gameWin() {
     console.log('¡Terminaste el juego!');
     clearInterval(timeInterval);
+    console.log('vmodofokoooo');
   
     const recordTime = +localStorage.getItem('record_time');
     const playerTime = Date.now() - timeStar;
