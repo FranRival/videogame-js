@@ -61,6 +61,7 @@ function startGame(){
     if (!timeStar) {
         timeStar = Date.now()
         timeInterval = setInterval(showTime, 100)
+        showRecord()
     }
 
     const mapsRows = map.trim().split('\n') 
@@ -108,6 +109,10 @@ function showLives(){
     heartArray.forEach(heart => spanLives.append(heart))
 }
 
+function showRecord(){
+    pResult.innerHTML = localStorage.getItem('record_time')
+}
+
 function showTime(){
     spanTime.innerHTML = Date.now() - timeStar
 }
@@ -130,7 +135,6 @@ function levelFail(){
 function gameWin() {
     console.log('¡Terminaste el juego!');
     clearInterval(timeInterval);
-    console.log('vmodofokoooo');
   
     const recordTime = +localStorage.getItem('record_time');
     const playerTime = Date.now() - timeStar;
