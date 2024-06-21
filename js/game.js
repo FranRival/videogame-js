@@ -244,9 +244,9 @@ function moveByKeys(event){
 
 function setCanvasSize(){    
     if (window.innerHeight > window.innerWidth) {
-        canvasSize = window.innerWidth * .8
+        canvasSize = window.innerWidth * .7
     }else{
-        canvasSize = window.innerHeight * .8
+        canvasSize = window.innerHeight * .7
     }
 
 
@@ -264,3 +264,5 @@ function setCanvasSize(){
 
 
 
+
+//depurando errores
