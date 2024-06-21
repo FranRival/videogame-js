@@ -240,6 +240,9 @@ function moveByKeys(event){
 }
 
 
+function fixNumber(n){
+    return Number(n.toFixed(1))
+}//resolver el error de todas las variables que den decimales.
 
 
 function setCanvasSize(){    
@@ -255,6 +258,12 @@ function setCanvasSize(){
     //canvasSize = canvasSize.toFixed(0)
     //sale un string
     //por eso, se debe de agregar Number()
+
+    //las 3 variables que tienen ubicaciones son:
+    //elementSize
+    //playerPosition
+    //giftPosition
+    //and todas deben conicidir alv
 
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
