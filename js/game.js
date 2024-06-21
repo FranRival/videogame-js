@@ -44,7 +44,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-    //console.log({canvasSize, elementsSize});
+    console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
     const map = maps[level] 
@@ -267,3 +267,7 @@ function setCanvasSize(){
 
 //depurando errores
 //tenemos que hacer que esa calavera sea cambiada por otra tontera. 
+
+
+//la calavera no puede acceder al regalo aunque le demos un infinito de hacia arriba. es como si this modofoko shiet...no puedo acceder arriba.
+//
