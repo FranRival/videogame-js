@@ -270,4 +270,5 @@ function setCanvasSize(){
 
 
 //la calavera no puede acceder al regalo aunque le demos un infinito de hacia arriba. es como si this modofoko shiet...no puedo acceder arriba.
-//
+//and el mistake esta here:
+// (playerPosition.y - elementSize) < elementSize ---devuelve un true.
