@@ -203,7 +203,7 @@ function moveUp(){
 
 
 function moveLeft(){
-    if ((playerPosition.x - elementsSize).toFixed(2) < elementsSize) {
+    if ((playerPosition.x - elementsSize) < elementsSize) {
         console.log('OUT');
     }else{
         console.log('Me quiero mover hacia izquierda');
@@ -250,7 +250,11 @@ function setCanvasSize(){
     }
 
 
-    canvasSize = Number(canvasSize.toFixed(0))
+    canvasSize = Number(canvasSize.toFixed(0)) //here is the fokin problem. por eso se debe hacer el toFIxed()
+    //pero es asi: 
+    //canvasSize = canvasSize.toFixed(0)
+    //sale un string
+    //por eso, se debe de agregar Number()
 
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
