@@ -257,8 +257,8 @@ function setCanvasSize(){
 
     elementsSize = canvasSize / 10
 
-    playerPosition.x = undefined
-    playerPosition.y = undefined
+    playerPosition.x = undefined //aqui es el trick to hacer que
+    playerPosition.y = undefined //la calavera siempre este en 0
     startGame()
 }
 
@@ -266,3 +266,4 @@ function setCanvasSize(){
 
 
 //depurando errores
+//tenemos que hacer que esa calavera sea cambiada por otra tontera. 
