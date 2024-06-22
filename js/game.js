@@ -269,3 +269,5 @@ function setCanvasSize(){
 
 //e juego a github pages
 //me aparece el error en el 3er nivel. no puedo cruzar el regalo.
+
+//tenemos que repararlo desde el 3er nivel
