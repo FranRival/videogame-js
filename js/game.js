@@ -253,36 +253,19 @@ function setCanvasSize(){
     }
 
 
-    canvasSize = Number(canvasSize.toFixed(0)) //here is the fokin problem. por eso se debe hacer el toFIxed()
-    //pero es asi: 
-    //canvasSize = canvasSize.toFixed(0)
-    //sale un string
-    //por eso, se debe de agregar Number()
-
-    //las 3 variables que tienen ubicaciones son:
-    //elementSize
-    //playerPosition
-    //giftPosition
-    //and todas deben conicidir alv
-
+    canvasSize = Number(canvasSize.toFixed(0)) 
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
 
     elementsSize = canvasSize / 10
 
-    playerPosition.x = undefined //aqui es el trick to hacer que
-    playerPosition.y = undefined //la calavera siempre este en 0
+    playerPosition.x = undefined 
+    playerPosition.y = undefined 
     startGame()
 }
 
 
 
 
-//depurando errores
-//tenemos que hacer que esa calavera sea cambiada por otra tontera. 
-
-
-//la calavera no puede acceder al regalo aunque le demos un infinito de hacia arriba. es como si this modofoko shiet...no puedo acceder arriba.
-//and el mistake esta here:
-// (playerPosition.y - elementSize) < elementSize ---devuelve un true.
-//el proble ade los juegos son los decimales. 
+//e juego a github pages
+//me aparece el error en el 3er nivel. no puedo cruzar el regalo.
