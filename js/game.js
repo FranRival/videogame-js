@@ -271,3 +271,6 @@ function setCanvasSize(){
 //me aparece el error en el 3er nivel. no puedo cruzar el regalo.
 
 //tenemos que repararlo desde el 3er nivel
+
+//un boton de reinicio. 
+//si te acabas las 3 vidas, debe de haber una animacion. 
