@@ -302,3 +302,6 @@ function spin(text) {
 
 
 //los primeros commits del proyecto son los mas dificiles. son los que tienen los ciclos for. y el reemplazo de arrays por x. 
+
+
+//uno de los commits. de donde traen los objetos que se imprimen en consola. - 446478d9bc2ba79af8a493a6ecd54f4ad206fcb5
