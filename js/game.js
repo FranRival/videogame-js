@@ -299,3 +299,6 @@ function spin(text) {
     text = text.replace(e_v, parts[Math.floor(Math.random()*parts.length)]);
     return spin(text);
 }
+
+
+//los primeros commits del proyecto son los mas dificiles. son los que tienen los ciclos for. y el reemplazo de arrays por x. 
