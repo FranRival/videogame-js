@@ -308,4 +308,5 @@ function spin(text) {
 //y cual es el total de lineas de codigo impresas.
 
 //b4ae7c0143d37310cd39a8dd20b21c993930ee27 - en este commit comienzan los adeventlistener. 
-//uno de los commits. de donde traen los objetos que se imprimen en consola. - 446478d9bc2ba79af8a493a6ecd54f4ad206fcb5
+
+//se resolvieron los errores.
