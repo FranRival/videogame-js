@@ -309,4 +309,5 @@ function spin(text) {
 
 //b4ae7c0143d37310cd39a8dd20b21c993930ee27 - en este commit comienzan los adeventlistener. 
 
-//sigo sin understand como funcionan el juego en sus primeros origenes. 
+//git diff -IDENTIFICADOR IDENTIFICADOR 
+//
