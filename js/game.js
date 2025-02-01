@@ -313,3 +313,5 @@ function spin(text) {
 
 
 //el mapa se le puede colocar un console.log para saber cuando se sale del mapa. 
+
+//hay que understand que es elementSize - playerPosition.x - playerPosition.y. ahi esta el secret de all of this modofoko shet. 
