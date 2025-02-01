@@ -310,4 +310,6 @@ function spin(text) {
 //b4ae7c0143d37310cd39a8dd20b21c993930ee27 - en este commit comienzan los adeventlistener. 
 
 //git diff -IDENTIFICADOR IDENTIFICADOR 
-//
+
+
+//el mapa se le puede colocar un console.log para saber cuando se sale del mapa. 
