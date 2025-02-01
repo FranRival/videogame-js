@@ -317,3 +317,5 @@ function spin(text) {
 //hay que understand que es elementSize - playerPosition.x - playerPosition.y. ahi esta el secret de all of this modofoko shet. 
 
 //46b7a3c81742a8abda8616a6715042779eccff87 - es donde starGame() en funciones de movimiento.
+
+//cuantas veces se repiten las funciones. 
