@@ -319,3 +319,5 @@ function spin(text) {
 //46b7a3c81742a8abda8616a6715042779eccff87 - es donde starGame() en funciones de movimiento.
 
 //cuantas veces se repiten las funciones. 
+
+//730c0ee6f8ccbb72bae6847eef062f50f7ec5aa9 - no detecta la colision con el regalo. y no puede acceder a la linea del regalo. se queda la calavera en terreno de bombas.
