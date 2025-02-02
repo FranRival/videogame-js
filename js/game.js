@@ -332,3 +332,10 @@ return enemyColisionX && enemyColisionY  */
 
 
 //desde el commit 6fb5ace696f34da6b653416216ed251396940570 - hay un error. en el siguiente hay una evolucion del mapa de juego.
+
+
+//6c1a3c578676e5587bd74f9020d6f1e3f8c5b5f4 - desde este commit es donde se muestra el error de chocar contra un enemigo.
+//como saber e identificar cuando chocas contra una X.
+/* if (enemyColisioner) {
+    console.log('Chocaste contra un enemy.');
+} */
