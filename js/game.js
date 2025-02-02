@@ -323,3 +323,9 @@ function spin(text) {
 //730c0ee6f8ccbb72bae6847eef062f50f7ec5aa9 - no detecta la colision con el regalo. y no puede acceder a la linea del regalo. se queda la calavera en terreno de bombas.
 
 //en algun punto el mapa debe de cambiar. en que commit podria ser this shit.
+
+
+//no understand como working this piece of code. 0aefcb3fbbdebfe9115b1bea240694aacf63a1cd
+/* const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)
+const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)
+return enemyColisionX && enemyColisionY  */
