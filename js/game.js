@@ -329,3 +329,6 @@ function spin(text) {
 /* const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)
 const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)
 return enemyColisionX && enemyColisionY  */
+
+
+//desde el commit 6fb5ace696f34da6b653416216ed251396940570 - hay un error. en el siguiente hay una evolucion del mapa de juego.
