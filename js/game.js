@@ -358,3 +358,10 @@ d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - infinito. perdemos 3 vidas y continua
 
 4dc6b724925197d5c59c728d34da1d08f665ea98 - pasamos encima de las bombas. No podemos regresar a la linea de antes. 
  */
+
+
+/* 
+d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - no se puede acceder al regalo en el 3er nivel. 
+
+7d9b7cedaf6862badee2a3e94d9bcd01ea987b97 - no se puede acceder al regalo en el 3er nivel. pero, tocando una bomba, lanza un error.  
+*/
