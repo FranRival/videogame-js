@@ -375,3 +375,8 @@ d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - no se puede acceder al regalo en el 3
 //34630dc1ecdcee9af9aeb1bb052a33c6650e9f1d - sho no understand this fockin program alv.
 
 
+/* 
+d4292490a3d17e1f3c61a9708ac38a3bffbfecbd - hay 3 vidas. llevan comas. cuando se acaban las vidas lanza error. - invalid array lenght. 
+
+34630dc1ecdcee9af9aeb1bb052a33c6650e9f1d - se multiplican los corazones por cada movimiento. - invalid array lenght. 
+ */
