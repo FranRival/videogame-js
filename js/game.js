@@ -382,3 +382,6 @@ d4292490a3d17e1f3c61a9708ac38a3bffbfecbd - hay 3 vidas. llevan comas. cuando se 
  */
 
 //6d6a675ba974252b9f7c8c7b176ec436c57d6084 - intervalo de tiempo
+
+
+//fe56136a88bf8b60b27837906d1e8b5d84e9353b - a partir de aqui ya no hay mas error de lenght array. 
