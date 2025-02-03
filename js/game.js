@@ -350,3 +350,11 @@ levelFail (en este commit - d8a32)
 gameWin (anterior commit)
 levelWin (6fb5ace696f34da6b653416216ed251396940570)
  */
+
+
+/* 
+
+d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - infinito. perdemos 3 vidas y continuamos en el nivel. 
+
+4dc6b724925197d5c59c728d34da1d08f665ea98 - pasamos encima de las bombas. No podemos regresar a la linea de antes. 
+ */
