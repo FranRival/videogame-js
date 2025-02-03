@@ -365,3 +365,5 @@ d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - no se puede acceder al regalo en el 3
 
 7d9b7cedaf6862badee2a3e94d9bcd01ea987b97 - no se puede acceder al regalo en el 3er nivel. pero, tocando una bomba, lanza un error.  
 */
+
+//10d75ebf7c4f01cf2a99b7de83367b2124932fdb - corazones de vida.
