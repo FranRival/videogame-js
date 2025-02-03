@@ -343,3 +343,6 @@ return enemyColisionX && enemyColisionY  */
 
 
 //d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - a partir de este commit, chocar, reinicia el juego.
+
+
+//d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - una nueva funcion de perdidas. 
