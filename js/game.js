@@ -367,3 +367,5 @@ d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - no se puede acceder al regalo en el 3
 */
 
 //10d75ebf7c4f01cf2a99b7de83367b2124932fdb - corazones de vida.
+
+//026f17597806903a8ff7e8d2e01c17f86a917e8e - se muestran los corazones solo en consola.
