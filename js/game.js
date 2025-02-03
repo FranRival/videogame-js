@@ -380,3 +380,5 @@ d4292490a3d17e1f3c61a9708ac38a3bffbfecbd - hay 3 vidas. llevan comas. cuando se 
 
 34630dc1ecdcee9af9aeb1bb052a33c6650e9f1d - se multiplican los corazones por cada movimiento. - invalid array lenght. 
  */
+
+//6d6a675ba974252b9f7c8c7b176ec436c57d6084 - intervalo de tiempo
