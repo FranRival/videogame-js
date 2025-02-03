@@ -368,6 +368,10 @@ d8a3268e0bbefb7d18550415c7bf0d6ab2fcfdb0 - no se puede acceder al regalo en el 3
 
 //10d75ebf7c4f01cf2a99b7de83367b2124932fdb - corazones de vida.
 
+//a5e441171713dc4ad26f7b9b238271a99a621f7e - funcion showLives funcion.
+
 //026f17597806903a8ff7e8d2e01c17f86a917e8e - se muestran los corazones solo en consola.
 
 //34630dc1ecdcee9af9aeb1bb052a33c6650e9f1d - sho no understand this fockin program alv.
+
+
