@@ -398,3 +398,4 @@ cec76fe044b633287bc885a73ff7f65717ef6604 - se tiene que dar un paso extra para p
 //76084763a04644fef346b782a33d0c69d5e73a50 - se imprime el tiempo en consola.
 
 
+//f55dbc332007537f5f4616e91730e3d8942b0068 - WORKS. ya no es necesario una tecla extra para pasar de nivel. tampoco hay salidas de mapa. y se imprime en pantalla el Console Map. 
