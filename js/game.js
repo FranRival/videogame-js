@@ -385,3 +385,5 @@ d4292490a3d17e1f3c61a9708ac38a3bffbfecbd - hay 3 vidas. llevan comas. cuando se 
 
 
 //fe56136a88bf8b60b27837906d1e8b5d84e9353b - a partir de aqui ya no hay mas error de lenght array. 
+
+//cec76fe044b633287bc885a73ff7f65717ef6604 - tenemos que dar un paso mas alla del regalo para que detecte el siguiente nivel.
