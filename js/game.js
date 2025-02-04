@@ -395,5 +395,6 @@ d4292490a3d17e1f3c61a9708ac38a3bffbfecbd - hay 3 vidas. llevan comas. cuando se 
 cec76fe044b633287bc885a73ff7f65717ef6604 - se tiene que dar un paso extra para pasar de nivel. 
  */
 
+//76084763a04644fef346b782a33d0c69d5e73a50 - se imprime el tiempo en consola.
 
 
