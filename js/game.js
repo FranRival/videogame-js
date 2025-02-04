@@ -410,3 +410,5 @@ playerPosition.x y playerPosition.y
 4c8bbe4ef9c748d2b3a1f1285c892f7476001f0a - commits anteriores, funciona muy bien.
 
 6a549a3b36aa80bc4af5aa8fe1ed8df65c5da21b - no puedo tocar el 3er regalo en el juego. */
+
+//2e290b2a6d920b78bcf346e88bba92b8dac91aec - en este commit se arregla. y el arreglo fue: if ((playerPosition.x - elementsSize).toFixed(2) < elementsSize)
