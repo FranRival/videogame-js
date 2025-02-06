@@ -47,7 +47,7 @@ function startGame(){
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
-    const map = maps[level] 
+    const map = maps[level] //0 - 1 - 2: dependiendo del nivel de maps.js
 
 
 
