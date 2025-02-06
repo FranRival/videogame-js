@@ -84,12 +84,13 @@ function startGame(){
             
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
-            console.log(posX);
+           // console.log(posX);
            // console.log(posY);
+           console.log(playerPosition);//son 100 resultados.
+           //son de 10 por 10.
+           
 
-
-
-            if (col == 'O') {
+            if (col == 'O') { //puerta
                 if (!playerPosition.x && !playerPosition.y) {
                     playerPosition.x = posX
                     playerPosition.y = posY
