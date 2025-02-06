@@ -87,11 +87,9 @@ function startGame(){
             //a partir de aqui ya hay un enlazamiento entre emojis y X.
             
             
-            const posX = elementsSize * (colI + 1)
+            const posX = elementsSize * (colI + 1) //21.4*X
             const posY = elementsSize * (rowI + 1)
-           // console.log(posX);
-           // console.log(posY);
-         //  console.log(playerPosition);//son 100 resultados.
+         //console.log(playerPosition);//son 100 resultados.
            //son de 10 por 10.
            
 
@@ -99,6 +97,9 @@ function startGame(){
                 if (!playerPosition.x && !playerPosition.y) {
                     playerPosition.x = posX
                     playerPosition.y = posY
+                    console.log(playerPosition);//21.4 y 214 
+                    //
+                    
                 }
             }else if(col == 'I'){//regalo
                 giftPosition.x = posX
