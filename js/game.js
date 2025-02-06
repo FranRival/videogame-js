@@ -64,8 +64,8 @@ function startGame(){
         showRecord()
     }
 
-    const mapsRows = map.trim().split('\n') 
-    const mapRowCols = mapsRows.map(row => row.trim().split(''))
+    const mapsRows = map.trim().split('\n') //horizontales
+    const mapRowCols = mapsRows.map(row => row.trim().split('')) //verticales
    // console.log({map, mapsRows, mapRowCols});
 
     showLives()
