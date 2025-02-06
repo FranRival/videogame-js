@@ -53,7 +53,7 @@ function startGame(){
 
     ///thos modofoko if es para inicializar el game
     if (!map) {
-        gameWin()//sospecho que aqui hay otro error.
+        gameWin()
         return
     }
 
@@ -74,9 +74,14 @@ function startGame(){
     game.clearRect(0,0,canvasSize, canvasSize);
 
     mapRowCols.forEach((row, rowI)=> {
-        row.forEach((col, colI)=>{
-            
+        //console.log(row);//columnas
+        //console.log(rowI);// contador 0 - 9
+        row.forEach((col, colI)=>{  
             const emoji = emojis[col]
+          //  console.log(col);//filas trasnformadas en columnas
+          //  console.log(colI);//contador 0 - 9
+            
+            
             //console.log(emoji);//100 resultados impresos. 
             //console.log(col);//horizontales que se volvieron columnas.
             //a partir de aqui ya hay un enlazamiento entre emojis y X.
@@ -105,8 +110,8 @@ function startGame(){
                 })
             }
 
-            game.fillText(emoji, posX,posY)
-            console.log(emoji);
+            game.fillText(emoji, posX,posY)//renderiza las bombas y la calavera
+           // console.log(emoji);
             //console.log(posX);
             //console.log(posY);
             
