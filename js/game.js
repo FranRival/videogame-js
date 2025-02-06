@@ -77,15 +77,15 @@ function startGame(){
         row.forEach((col, colI)=>{
             
             const emoji = emojis[col]
-            console.log(emoji);
-            console.log(col);
+            //console.log(emoji);//100 resultados impresos. 
+            //console.log(col);//horizontales que se volvieron columnas.
             //a partir de aqui ya hay un enlazamiento entre emojis y X.
             
             
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
-/*             console.log(posX);
-            console.log(posY); */
+            console.log(posX);
+           // console.log(posY);
 
 
 
