@@ -75,9 +75,18 @@ function startGame(){
 
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
+            
             const emoji = emojis[col]
+            console.log(emoji);
+            console.log(col);
+            //a partir de aqui ya hay un enlazamiento entre emojis y X.
+            
+            
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
+/*             console.log(posX);
+            console.log(posY); */
+
 
 
             if (col == 'O') {
