@@ -86,7 +86,7 @@ function startGame(){
             const posY = elementsSize * (rowI + 1)
            // console.log(posX);
            // console.log(posY);
-           console.log(playerPosition);//son 100 resultados.
+         //  console.log(playerPosition);//son 100 resultados.
            //son de 10 por 10.
            
 
@@ -95,10 +95,10 @@ function startGame(){
                     playerPosition.x = posX
                     playerPosition.y = posY
                 }
-            }else if(col == 'I'){
+            }else if(col == 'I'){//regalo
                 giftPosition.x = posX
                 giftPosition.y = posY
-            }else if (col=='X'){
+            }else if (col=='X'){ //bomba
                 enemisPositions.push({
                     x: posX,
                     y: posY
@@ -106,6 +106,12 @@ function startGame(){
             }
 
             game.fillText(emoji, posX,posY)
+            console.log(emoji);
+            //console.log(posX);
+            //console.log(posY);
+            
+            //sigue imprimiendo la misma shiet. butt whats meands?
+            
         })
     });
     movePlayer()
