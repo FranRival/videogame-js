@@ -44,7 +44,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-    console.log({canvasSize, elementsSize});
+    console.log({canvasSize, elementsSize});//21.4*10=214
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
     const map = maps[level] //0 - 1 - 2: dependiendo del nivel de maps.js
@@ -88,22 +88,23 @@ function startGame(){
             
             
             const posX = elementsSize * (colI + 1) //21.4*X
-            const posY = elementsSize * (rowI + 1)
-         //console.log(playerPosition);//son 100 resultados.
+            //console.log(posX); //vrticales
+            const posY = elementsSize * (rowI + 1)//21.4*X
+            //console.log(posY); //horizontals
+           //console.log(playerPosition);//son 100 resultados.
            //son de 10 por 10.
-           
 
-            if (col == 'O') { //puerta
-                if (!playerPosition.x && !playerPosition.y) {
-                    playerPosition.x = posX
-                    playerPosition.y = posY
-                    console.log(playerPosition);//21.4 y 214 
-                    //
-                    
+
+         if (col == 'O') { //puerta
+            if (!playerPosition.x && !playerPosition.y) {
+                playerPosition.x = posX
+                playerPosition.y = posY
+             //   console.log(playerPosition);//21.4 y 214 
                 }
             }else if(col == 'I'){//regalo
                 giftPosition.x = posX
                 giftPosition.y = posY
+               // console.log(giftPosition);//21.4 y 21.4
             }else if (col=='X'){ //bomba
                 enemisPositions.push({
                     x: posX,
