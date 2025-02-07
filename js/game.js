@@ -49,15 +49,11 @@ function startGame(){
     game.textAlign = 'end'
     const map = maps[level] //0 - 1 - 2: dependiendo del nivel de maps.js
 
-
-
     ///thos modofoko if es para inicializar el game
     if (!map) {
         gameWin()
         return
     }
-
-
     if (!timeStar) {
         timeStar = Date.now()
         timeInterval = setInterval(showTime, 100)
@@ -80,22 +76,20 @@ function startGame(){
             const emoji = emojis[col]
           //  console.log(col);//filas trasnformadas en columnas
           //  console.log(colI);//contador 0 - 9
-            
-            
             //console.log(emoji);//100 resultados impresos. 
             //console.log(col);//horizontales que se volvieron columnas.
             //a partir de aqui ya hay un enlazamiento entre emojis y X.
-            
             
             const posX = elementsSize * (colI + 1) //21.4*X
             //console.log(posX); //vrticales
             const posY = elementsSize * (rowI + 1)//21.4*X
             //console.log(posY); //horizontals
-           //console.log(playerPosition);//son 100 resultados.
+          // console.log(playerPosition);//son 100 resultados.
            //son de 10 por 10.
 
 
          if (col == 'O') { //puerta
+           // console.log(playerPosition);//sin datos.            
             if (!playerPosition.x && !playerPosition.y) {
                 playerPosition.x = posX
                 playerPosition.y = posY
