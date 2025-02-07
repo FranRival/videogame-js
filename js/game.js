@@ -89,11 +89,13 @@ function startGame(){
 
 
          if (col == 'O') { //puerta
-           // console.log(playerPosition);//sin datos.            
+            console.log('playerPosition s/n');                      
+            console.log(playerPosition);//sin datos.            
             if (!playerPosition.x && !playerPosition.y) {
                 playerPosition.x = posX
                 playerPosition.y = posY
-             //   console.log(playerPosition);//21.4 y 214 
+                console.log('playerPosition con valor');
+                console.log(playerPosition);//21.4 y 214 
                 }
             }else if(col == 'I'){//regalo
                 giftPosition.x = posX
