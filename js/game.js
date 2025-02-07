@@ -193,8 +193,8 @@ function movePlayer(){
     //    console.log('arroja un true o false 2');
      //   console.log(gifCOlisionEnY);
     const gifColision = gifCOlisionEnX && gifCOlisionEnY;
-        console.log('arroja un true o false 3');
-        console.log(gifColision);// 'FALSE'); //arroja un false,.. hasta...
+       // console.log('arroja un true o false 3');
+       // console.log(gifColision);// 'FALSE'); //arroja un false,.. hasta...
 
     if (gifColision) {
         //creo que cada tecla, se vuelve a iniciar el codigo.
@@ -205,11 +205,11 @@ function movePlayer(){
 
 
     const enemyColisioner = enemisPositions.find(enemy =>{
-        //console.log('enemy collision horizontal');        
-        const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.      
+        //console.log('enemy collision horizontal');                
+        const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.   
         const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)//false
         return enemyColisionX && enemyColisionY
-    })//no regresa datos. solo compara el codigo. 
+    })//enemisPositions. 
 
 
     if (enemyColisioner) {
@@ -223,7 +223,7 @@ function movePlayer(){
 
     
 function moveUp(){
-    console.log('Me quiero mover hacia arriba');
+   // console.log('Me quiero mover hacia arriba');
     if ((playerPosition.y - elementsSize) < 0) { 
         console.log('OUT');
     }else{
