@@ -33,7 +33,7 @@ const giftPosition = {
 const playerPosition = {
     x: undefined,
     y: undefined
-}
+}//van a servir como almacenantes de ubicaciones.
 
 let enemisPositions = [] 
 
@@ -200,7 +200,7 @@ function movePlayer(){
 
 
     const enemyColisioner = enemisPositions.find(enemy =>{
-        console.log('enemy collision horizontal');        
+        //console.log('enemy collision horizontal');        
         const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.      
         const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)//false
         return enemyColisionX && enemyColisionY
@@ -212,6 +212,7 @@ function movePlayer(){
     }
 
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+    
 }
 
 
@@ -444,3 +445,5 @@ playerPosition.x y playerPosition.y
 //playerPosition
 //giftPosition
 //and todas deben conicidir alv
+
+//quedo casi todo el codigo para ser desifrado. 
