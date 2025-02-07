@@ -187,8 +187,14 @@ function levelWin(){
 
 function movePlayer(){
     const gifCOlisionEnX = playerPosition.x.toFixed(3) == giftPosition.x.toFixed(3)
+        console.log('arroja un true o false 1'); 
+        console.log(gifCOlisionEnX); 
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == giftPosition.y.toFixed(3)
+        console.log('arroja un true o false 2');
+        console.log(gifCOlisionEnY);
     const gifColision = gifCOlisionEnX && gifCOlisionEnY;
+        console.log('arroja un true o false 3');
+        console.log(gifColision);
 
     if (gifColision) {
         levelWin()
