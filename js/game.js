@@ -200,10 +200,12 @@ function movePlayer(){
 
 
     const enemyColisioner = enemisPositions.find(enemy =>{
-        const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)
-        const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)
+        console.log('enemy collision horizontal');        
+        const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.      
+        const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)//false
         return enemyColisionX && enemyColisionY
-    })
+    })//no regresa datos. solo compara el codigo. 
+
 
     if (enemyColisioner) {
         levelFail()
