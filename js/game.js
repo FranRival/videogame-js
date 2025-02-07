@@ -89,13 +89,13 @@ function startGame(){
 
 
          if (col == 'O') { //puerta
-            console.log('playerPosition s/n');                      
-            console.log(playerPosition);//sin datos.            
+            //console.log('playerPosition s/n');                      
+           // console.log(playerPosition);//sin datos.            
             if (!playerPosition.x && !playerPosition.y) {
                 playerPosition.x = posX
                 playerPosition.y = posY
-                console.log('playerPosition con valor');
-                console.log(playerPosition);//21.4 y 214 
+                //console.log('playerPosition con valor');
+                //console.log(playerPosition);//21.4 y 214 
                 }
             }else if(col == 'I'){//regalo
                 giftPosition.x = posX
@@ -193,12 +193,13 @@ function movePlayer(){
     //    console.log('arroja un true o false 2');
      //   console.log(gifCOlisionEnY);
     const gifColision = gifCOlisionEnX && gifCOlisionEnY;
-      //  console.log('arroja un true o false 3');
-     //   console.log(gifColision);
+        console.log('arroja un true o false 3');
+        console.log(gifColision);// 'FALSE'); //arroja un false,.. hasta...
 
     if (gifColision) {
         //creo que cada tecla, se vuelve a iniciar el codigo.
-        
+        console.log('💥💥💥💥💥💥💥💥💥💥');
+        console.log(gifColision);//arroja un true.
         levelWin()
     }
 
