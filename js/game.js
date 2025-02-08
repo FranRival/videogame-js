@@ -105,7 +105,7 @@ function startGame(){
                 enemisPositions.push({
                     x: posX,
                     y: posY
-                })
+                }) //a enemisPosition le enviamos playerPosition?
             }
 
             game.fillText(emoji, posX,posY)//renderiza las bombas y la calavera
@@ -209,7 +209,8 @@ function movePlayer(){
         const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.   
         const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)//false
         return enemyColisionX && enemyColisionY
-    })//enemisPositions. 
+    })//enemisPositions. como inyecta this information?
+    //en x y y. 
 
 
     if (enemyColisioner) {
