@@ -120,6 +120,7 @@ function startGame(){
     movePlayer()
 }
 
+//es en este pedazo de codigo donde se sobreescribe el heart.
 
 function showLives(){
     const heartArray = Array(lives).fill(emojis['HEART'])
