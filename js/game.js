@@ -120,8 +120,8 @@ function startGame(){
     movePlayer()
 }
 
-//mismo resultado que con el codigo anterior que escribi.
-//sigo sin finding el mistake
+//he obtenido el resultado en pantalla. 
+
 function showLives(){
     const heartArray = Array(lives).fill(emojis['HEART'])
 
