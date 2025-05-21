@@ -117,8 +117,13 @@ function startGame(){
             //console.log(posX);
             //console.log(posY);
             
-            //sigue imprimiendo la misma shiet. butt whats meands?
-            
+        /*             
+        ***playerPosition y giftPosition son: 2 arrays con ubiccion X y Y que contendran estos datos:
+
+        PosX
+        PosY
+
+                    */
         })
     });
     movePlayer()
@@ -211,8 +216,10 @@ function movePlayer(){
 
 
     //////aqui hay una estructura creada con Arrays. repetidora y rellenadora de caracterres. y luego, busqueda de los mismos caracteres. 
+    //como y cual es el historia?
+
     const enemyColisioner = enemisPositions.find(enemy =>{
-        //console.log('enemy collision horizontal');                
+        //console.log('enemy collision horizontal');
         const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.   
         const enemyColisionY =  enemy.y.toFixed(3) == playerPosition.y.toFixed(3)//false
         return enemyColisionX && enemyColisionY
