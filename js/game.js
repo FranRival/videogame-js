@@ -16,6 +16,8 @@ const spanTime = document.querySelector('#tiempo')
 const pResult = document.querySelector('#result');
 const spanRecord = document.querySelector('#record');
 
+//volviendo a JS
+
 let canvasSize
 let elementsSize
 let level = 0
