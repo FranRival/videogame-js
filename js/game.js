@@ -210,6 +210,7 @@ function movePlayer(){
     }
 
 
+    //////aqui hay una estructura creada con Arrays. repetidora y rellenadora de caracterres. y luego, busqueda de los mismos caracteres. 
     const enemyColisioner = enemisPositions.find(enemy =>{
         //console.log('enemy collision horizontal');                
         const enemyColisionX = enemy.x.toFixed(3) == playerPosition.x.toFixed(3)//false.   
