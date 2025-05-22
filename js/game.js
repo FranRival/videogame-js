@@ -17,6 +17,11 @@ const pResult = document.querySelector('#result');
 const spanRecord = document.querySelector('#record');
 
 
+
+//https://platzi.com/cursos/javascript-practico-videojuegos/?utm_source=platzi_teacher&utm_medium=teacher_referral&utm_campaign=894 
+//la ubicacion del curso. 
+
+
 let canvasSize
 let elementsSize
 let level = 0
