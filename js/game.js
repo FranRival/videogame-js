@@ -28,8 +28,10 @@ let timeInterval
 
 
 function imprimir(){
+    console.group()
     console.log(canvasSize);
-    
+    console.log(elementsSize); 
+    console.groupEnd()   
 }
 
 const giftPosition = {
@@ -51,7 +53,6 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-    imprimir()
     console.log({canvasSize, elementsSize});//21.4*10=214
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
@@ -297,7 +298,8 @@ function fixNumber(n){
 }//resolver el error de todas las variables que den decimales.
 
 
-function setCanvasSize(){    
+function setCanvasSize(){   
+    imprimir() 
     if (window.innerHeight > window.innerWidth) {
         canvasSize = window.innerWidth * .7
     }else{
@@ -313,6 +315,7 @@ function setCanvasSize(){
 
     playerPosition.x = undefined 
     playerPosition.y = undefined 
+    imprimir()
     startGame()
 }
 
