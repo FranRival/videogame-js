@@ -16,7 +16,6 @@ const spanTime = document.querySelector('#tiempo')
 const pResult = document.querySelector('#result');
 const spanRecord = document.querySelector('#record');
 
-//volviendo a JS
 
 let canvasSize
 let elementsSize
@@ -26,6 +25,12 @@ let lives = 3
 let timeStar
 let timePlayer
 let timeInterval
+
+
+function imprimir(){
+    console.log(canvasSize);
+    
+}
 
 const giftPosition = {
     x: undefined,
@@ -46,6 +51,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
+    imprimir()
     console.log({canvasSize, elementsSize});//21.4*10=214
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
