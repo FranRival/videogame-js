@@ -74,7 +74,6 @@ function startGame(){
     const mapRowCols = mapsRows.map(row => row.trim().split('')) //verticales
    // console.log({map, mapsRows, mapRowCols});
 
-   //identar codigo es con Alt z
 
     showLives()
 
