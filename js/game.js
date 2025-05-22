@@ -299,13 +299,11 @@ function fixNumber(n){
 
 
 function setCanvasSize(){   
-    imprimir() 
     if (window.innerHeight > window.innerWidth) {
         canvasSize = window.innerWidth * .7
     }else{
         canvasSize = window.innerHeight * .7
     }
-
 
     canvasSize = Number(canvasSize.toFixed(0)) 
     canvas.setAttribute('width', canvasSize)
