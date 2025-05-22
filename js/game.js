@@ -57,6 +57,7 @@ function startGame(){
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
     const map = maps[level] //0 - 1 - 2: dependiendo del nivel de maps.js
+    //maps. de donde salio this variable.
 
     ///thos modofoko if es para inicializar el game
     if (!map) {
