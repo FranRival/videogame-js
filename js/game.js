@@ -479,3 +479,9 @@ playerPosition.x y playerPosition.y
 //and todas deben conicidir alv
 
 //quedo casi todo el codigo para ser desifrado. 
+
+
+
+////////////10/20/25////////////
+
+//setAtribute: widht, height, id, class. 
