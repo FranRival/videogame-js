@@ -35,8 +35,16 @@ function startGame(){
 
     for (let i = 0; i < 10; i++) {
         const element = 10[i];
+        console.log(element);
+        console.log(i);
+        //emojis[X], game.js tiene acceso a maps.js. porque se definio asi en el html
+
+
+        //aqui se dibuja 💣 en la pocision 0, 0
         game.fillText(emojis['X'], 0 * i, 0 * i)
+
     }
+
 
 
 }
