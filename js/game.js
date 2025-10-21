@@ -488,3 +488,4 @@ playerPosition.x y playerPosition.y
 //commit - 6e7cd03b48ac7aec565ff594f33bfb51f48a1aaf
 //el ciclo for. no funciona. pero si funciona dibujar una 💣 en la pocision 0,0 
 
+//descompusimos el ciclo for anidado en el commit - 3102f9bd6bfe43980898fb6945cf791b4b304e76. 
