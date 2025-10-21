@@ -484,4 +484,7 @@ playerPosition.x y playerPosition.y
 
 ////////////10/20/25////////////
 
-//setAtribute: widht, height, id, class. 
+//setAtribute: width, height, id, class.
+//commit - 6e7cd03b48ac7aec565ff594f33bfb51f48a1aaf
+//el ciclo for. no funciona. pero si funciona dibujar una 💣 en la pocision 0,0 
+
