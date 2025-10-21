@@ -17,15 +17,21 @@ function startGame(){
     }
 
 
+    //si la pantalla de alto mide 1200 x .80 = 960
+    //width, height, id, class = 90
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
 
+
     
 
+    //960/10 = 96
     const elementsSize = canvasSize / 10
     console.log({canvasSize, elementsSize});
+    //canvasSize: 960 elementSize:96
 
     game.font= elementsSize + 'px Verdana'
+    //96px Verdana
 
     for (let i = 0; i < 10; i++) {
         const element = 10[i];
