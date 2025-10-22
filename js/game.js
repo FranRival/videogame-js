@@ -491,3 +491,5 @@ playerPosition.x y playerPosition.y
 //descompusimos el ciclo for anidado en el commit - 3102f9bd6bfe43980898fb6945cf791b4b304e76. 
 
 //descomponiendo los siguiente for de los siguientes commits. 3 de junio 2024.
+
+//primero se dibujan las columnas. de arriba hacia abajo.
