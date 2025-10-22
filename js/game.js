@@ -59,14 +59,16 @@ function startGame(){
         //este for modifica fila en cada iteracion
 
 
-        //mutable. fila = mapa[0],[1],[2]...[9]
+        //mutable. 
+        //fila = mapa[0],[1],[2]...[9]
     const fila = mapa[y];
     //mapa[1, 2, 3, 4...9]
     for (let x = 0; x < fila.length; x++) {
 
         //este for usa fila para acceder a sus caracteres
 
-        const letra = fila[x];       // 'I', 'X', '-', 'O'
+        const letra = fila[x];       
+        //fila['I', 'X', '-', 'O']
         const emoji = emojis[letra]; // convierte letra a emoji
         game.fillText(emoji, x*elementsSize, y*elementsSize);
     }
