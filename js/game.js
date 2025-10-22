@@ -489,3 +489,5 @@ playerPosition.x y playerPosition.y
 //el ciclo for. no funciona. pero si funciona dibujar una 💣 en la pocision 0,0 
 
 //descompusimos el ciclo for anidado en el commit - 3102f9bd6bfe43980898fb6945cf791b4b304e76. 
+
+//descomponiendo los siguiente for de los siguientes commits. 3 de junio 2024.
