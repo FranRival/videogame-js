@@ -495,3 +495,6 @@ playerPosition.x y playerPosition.y
 //primero se dibujan las columnas. de arriba hacia abajo.
 
 //volviendo a descomponer el for. 02c75a929a2363ab528be1c46226f6eca8bbc1e7
+
+//ARRAY BIDIMENSIONAL
+//mapRoadCols [0][1] = X. Es decir, el primer indice, es toda la linea, y el siguiente indice es la pocision exacta del valor?
