@@ -18,46 +18,35 @@ function startGame(){
     game.textAlign = 'center'
 
     const map = maps[0] //es un string. convertir en un array
-    const mapRoads = maps[0].trim().split('\n') //arreglo de arreglos
-    const mapRowCols = mapRoads.map(row => row.trim().split(''))//cada letra es un elemento.
+    const mapRoads = maps[0].trim().split('\n') 
+    const mapRowCols = mapRoads.map(row => row.trim().split('')) //array bidimensional: un array que sus elementos, son otro array
 
     //
 
 
     console.log({map, mapRoads, mapRowCols});
 
-    //crear un nuevo arreglo.
-
-
-    //'modofokos and you fuck of' .splice (' ')
 
     for (let row = 1; row < 11; row++) {
         for (let column = 1; column < 11; column++){
             game.fillText(mapRowCols[row][column], elementsSize * column, elementsSize * row)
+
+            //mapRoadCols [0][1] = X. Es decir, el primer indice, es toda la linea, y el siguiente indice es la pocision exacta del valor?
         }
     }
 }
 
 
-//canvas responsive 
 
 function setCanvasSize(){
-    
-
     if (window.innerHeight > window.innerWidth) {
         canvasSize = window.innerWidth * .8
     }else{
         canvasSize = window.innerHeight * .8
     }
-
-
     canvas.setAttribute('width', canvasSize)
     canvas.setAttribute('height', canvasSize)
 
-    
     elementsSize = canvasSize / 10
-
     startGame()
 }
-
-//arrays multidimensionales
