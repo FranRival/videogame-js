@@ -32,6 +32,8 @@ function startGame(){
             game.fillText(mapRowCols[row][column], elementsSize * column, elementsSize * row)
 
             //mapRoadCols [0][1] = X. Es decir, el primer indice, es toda la linea, y el siguiente indice es la pocision exacta del valor?
+            //ROW - que fila - horizontal.
+            //COL - que columna - vertical
         }
     }
 }
@@ -50,3 +52,6 @@ function setCanvasSize(){
     elementsSize = canvasSize / 10
     startGame()
 }
+
+
+//arrays tridimensionales
