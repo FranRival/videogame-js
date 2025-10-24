@@ -15,7 +15,7 @@ function startGame(){
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
-    game.textAlign = 'center'
+    game.textAlign = 'top'
 
     const map = maps[0] //es un string. convertir en un array
     const mapRoads = maps[0].trim().split('\n') 
@@ -27,9 +27,10 @@ function startGame(){
     console.log({map, mapRoads, mapRowCols});
 
 
-    for (let row = 1; row < 11; row++) {
-        for (let column = 1; column < 11; column++){
-            game.fillText(mapRowCols[row][column], elementsSize * column, elementsSize * row)
+    for (let row = 0; row < 10; row++) {
+        for (let column = 0; column < 10; column++){
+            game.fillText(emojis[mapRowCols[row][column]], elementsSize * column, elementsSize * row)
+            //game.fillText(mapRowCols[row][column], elementsSize * column, elementsSize * row)
 
             //mapRoadCols [0][1] = X. Es decir, el primer indice, es toda la linea, y el siguiente indice es la pocision exacta del valor?
             //ROW - que fila - horizontal.
