@@ -498,3 +498,8 @@ playerPosition.x y playerPosition.y
 
 //ARRAY BIDIMENSIONAL
 //mapRoadCols [0][1] = X. Es decir, el primer indice, es toda la linea, y el siguiente indice es la pocision exacta del valor?
+
+//ARRAY TRIDIMENSIONAL
+//row - fila.
+//column - columna.
+//tridimensional[x][y] - esto no es un caracter. 
