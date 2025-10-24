@@ -35,9 +35,15 @@ function startGame(){
             //mapRoadCols [0][1] = X. Es decir, el primer indice, es toda la linea, y el siguiente indice es la pocision exacta del valor?
             //ROW - que fila - horizontal.
             //COL - que columna - vertical
+
+            //mapRowCols[row] - devuelve la fila. toda.
+            //mapRowCols[row][column] - devuelve el caracter en la columna de la fila row.
         }
     }
 }
+
+//array 4 dimensiones
+//array 5 dimensiones
 
 
 
