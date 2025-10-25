@@ -507,6 +507,11 @@ playerPosition.x y playerPosition.y
 //FOREACH
 //empieza con verticales y luego con horizontales.
 //row recorre todo el array.
-//rowIndex la cantidad de indices que tiene el array.
+//rowIndex la cantidad de indices que tiene el array. VERTICAL
 //col es un caracter
-//colIndex la pocision del caracter
+//colIndex la pocision del caracter. HORIZONTAL
+
+//porque utilizar mapRowCol, en vez de map, y mapRoads/
+//map = es un string. completo.
+//mapRoads = conversion del string a un array de filas
+//mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array
