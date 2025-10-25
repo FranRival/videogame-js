@@ -514,4 +514,4 @@ playerPosition.x y playerPosition.y
 //porque utilizar mapRowCol, en vez de map, y mapRoads/
 //map = es un string. completo.
 //mapRoads = conversion del string a un array de filas
-//mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array
+//mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array - delete3 e170fe766e85b30d53000fb18a5e01692e28a20b
