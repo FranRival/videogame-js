@@ -503,3 +503,10 @@ playerPosition.x y playerPosition.y
 //row - fila.
 //column - columna.
 //tridimensional[x][y] - esto no es un caracter. 
+
+//FOREACH
+//empieza con verticales y luego con horizontales.
+//row recorre todo el array.
+//rowIndex la cantidad de indices que tiene el array.
+//col es un caracter
+//colIndex la pocision del caracter
