@@ -515,3 +515,9 @@ playerPosition.x y playerPosition.y
 //map = es un string. completo.
 //mapRoads = conversion del string a un array de filas
 //mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array - delete3 e170fe766e85b30d53000fb18a5e01692e28a20b
+
+//addEventListener
+//admite 3 parametros.
+//tipoEvento, funcionCallback, opciones
+//tecla presionada, funcion a ejecutar, boleano.
+//boleano: capture, once, passive, signal - propiedades del objeto.
