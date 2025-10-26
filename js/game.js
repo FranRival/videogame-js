@@ -521,3 +521,4 @@ playerPosition.x y playerPosition.y
 //tipoEvento, funcionCallback, opciones
 //tecla presionada, funcion a ejecutar, boleano.
 //boleano: capture, once, passive, signal - propiedades del objeto.
+//mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array
