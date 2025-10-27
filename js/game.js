@@ -30,6 +30,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
+    game.clearRect(0, 0, canvasSize, canvasSize);
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
