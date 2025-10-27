@@ -20,6 +20,8 @@ const playerPosition = {
     y: undefined
 }
 
+let playerInitialized = false; // bandera
+
 window.addEventListener('load', setCanvasSize)
 window.addEventListener('resize', setCanvasSize)
 window.addEventListener('keydown', moveByKeys)
@@ -45,10 +47,10 @@ function startGame(){
             const posY = elementsSize * (rowI + 1)
 
 
-            if (col == 'O') {
-                playerPosition.x = posX
-                playerPosition.y = posY
-                console.log({playerPosition});
+            if (col == 'O' && !playerInitialized) {
+                playerPosition.x = posX;
+                playerPosition.y = posY;
+                playerInitialized = true;
             }
 
             game.fillText(emoji, posX,posY)
