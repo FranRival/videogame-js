@@ -533,3 +533,4 @@ playerPosition.x y playerPosition.y
 //48af2ff9ee61b86398f1f81099b1de4be7c07186
 //hay una solucion que brinda ChatGPT...
 //funciona la solucion. en el siguiente commit. el if ahora evita sobreescribir la nueva pocision en x y y. pero deja un rastro.
+//siguiente commit: game.clearRect(0, 0, canvasSize, canvasSize); - funciona borrando las cordenadas. eliminando asi el rastro de la calavera.
