@@ -528,3 +528,7 @@ playerPosition.x y playerPosition.y
 //esto, para actualizar las nuevas ubicaciones.
 //el detalle que marca: que se dejara un rastro. se ira dibujando encima.
 //otro error: el juego siempre se volvera a dibujar por cada tecla. no se actualizara. o si???????
+//////
+//No se puede RE dibujar el mapa, con la nueva ubicacion del emoji del jugador, porque el if (col=='O') esta borrando la nueva ubicacion. vuelve a buscar la letra O en el mapa.
+//48af2ff9ee61b86398f1f81099b1de4be7c07186
+//hay una solucion que brinda ChatGPT...
