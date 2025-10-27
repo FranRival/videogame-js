@@ -522,3 +522,9 @@ playerPosition.x y playerPosition.y
 //tecla presionada, funcion a ejecutar, boleano.
 //boleano: capture, once, passive, signal - propiedades del objeto.
 //mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array
+
+//e72bc9b1aa0b6899faad5fea38ed2023806b7d62 - se cambia el valor de playerPosition.y. no se actualiza el nuevo lugar de la calavera. 
+//CHATGPT recomienda colocar startGame(), justo debajo de las 4 funciones de movimiento. moveUp(), moveDown(), moveLeft(), moveRight().
+//esto, para actualizar las nuevas ubicaciones.
+//el detalle que marca: que se dejara un rastro. se ira dibujando encima.
+//otro error: el juego siempre se volvera a dibujar por cada tecla. no se actualizara. o si???????
