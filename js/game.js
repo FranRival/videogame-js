@@ -77,12 +77,18 @@ function moveUp(){
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
+    playerPosition.x -= elementsSize;
+    startGame()
 }
 function moveRight(){
     console.log('Me quiero mover hacia derecha');
+    playerPosition.x += elementsSize;
+    startGame()
 }
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
+    playerPosition.y += elementsSize
+    startGame()
 }
 
 
