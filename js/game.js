@@ -532,3 +532,4 @@ playerPosition.x y playerPosition.y
 //No se puede RE dibujar el mapa, con la nueva ubicacion del emoji del jugador, porque el if (col=='O') esta borrando la nueva ubicacion. vuelve a buscar la letra O en el mapa.
 //48af2ff9ee61b86398f1f81099b1de4be7c07186
 //hay una solucion que brinda ChatGPT...
+//funciona la solucion. en el siguiente commit. el if ahora evita sobreescribir la nueva pocision en x y y. pero deja un rastro.
