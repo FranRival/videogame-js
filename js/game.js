@@ -66,11 +66,12 @@ function startGame(){
 
     
 function moveUp(){
-    console.log(playerPosition.y); //la pocision Y esta cambiando.
+   // console.log(playerPosition.y); //la pocision Y esta cambiando.
     //el emoji aun no se ha actualizado de ubicacion.
     console.log('Me quiero mover hacia arriba');
     playerPosition.y -= elementsSize
-    console.log(playerPosition.y);
+   // console.log(playerPosition.y);
+   startGame()
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
