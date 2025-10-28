@@ -523,6 +523,8 @@ playerPosition.x y playerPosition.y
 //boleano: capture, once, passive, signal - propiedades del objeto.
 //mapRowCol = separar cada fila (4 filas) en caracteres individuales crando un array de array
 
+
+//ACTUALIZAR LA UBICACION DE LA CALAVERA
 //e72bc9b1aa0b6899faad5fea38ed2023806b7d62 - se cambia el valor de playerPosition.y. no se actualiza el nuevo lugar de la calavera. 
 //CHATGPT recomienda colocar startGame(), justo debajo de las 4 funciones de movimiento. moveUp(), moveDown(), moveLeft(), moveRight().
 //esto, para actualizar las nuevas ubicaciones.
@@ -534,3 +536,7 @@ playerPosition.x y playerPosition.y
 //hay una solucion que brinda ChatGPT...
 //funciona la solucion. en el siguiente commit. el if ahora evita sobreescribir la nueva pocision en x y y. pero deja un rastro.
 //siguiente commit: game.clearRect(0, 0, canvasSize, canvasSize); - funciona borrando las cordenadas. eliminando asi el rastro de la calavera.
+
+//Delete7
+//volvimos a tener solucion al problema de dibujar la calavera. En todas las funciones de movimiento. 
+//intentando - clearReact
