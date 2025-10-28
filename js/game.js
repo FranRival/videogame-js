@@ -540,3 +540,5 @@ playerPosition.x y playerPosition.y
 //Delete7
 //volvimos a tener solucion al problema de dibujar la calavera. En todas las funciones de movimiento. 
 //intentando - clearReact
+//creariamos una nueva funcion. NAAA. reenombrar la funcion starGame. pero no lo hicimos. 
+//PROBLEMA: logramos hacer que se elimine el rastro que deja la calavera. pero ahora no aparece la calavera hasta que presionamos una tecla. es decir, la declaracion para que haga presencia la calavera, esta en otra funcion. 
