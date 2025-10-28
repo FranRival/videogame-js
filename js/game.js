@@ -28,7 +28,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-      game.clearRect(0, 0, canvasSize, canvasSize)
+
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
@@ -69,10 +69,17 @@ function startGame(){
 
 //la razon: en cada funcion de movimiento se vuelve a ejecutar movePlayer.
 
+//43639bdee388992eb01499cafb33935ebdee1d13
+
+
+function Eliminar(){
+          game.clearRect(0, 0, canvasSize, canvasSize)
+}
+
+
 function movePlayer(){
+    game.clearRect(0, 0, canvasSize, canvasSize)
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
-  
-    
 }
     
 function moveUp(){
