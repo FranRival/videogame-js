@@ -73,14 +73,22 @@ function moveUp(){
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
+    playerPosition.x -= elementsSize
+    movePlayer()
 }
 function moveRight(){
     console.log('Me quiero mover hacia derecha');
+    playerPosition.x += elementsSize
+    movePlayer()
 }
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
+    playerPosition.y += elementsSize
+    movePlayer()
 }
 
+//colisiona con las bombas? o no.
+//
 
 
 function moveByKeys(event){
