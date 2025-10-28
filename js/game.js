@@ -28,6 +28,7 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
+      game.clearRect(0, 0, canvasSize, canvasSize)
     console.log({canvasSize, elementsSize});
 
     game.font= elementsSize + 'px Verdana'
@@ -62,8 +63,16 @@ function startGame(){
 }
 
 
+//PROBLEMA: este codigo deja un rastro.
+//se supone que con clearReact deberia de nunca moverse. porque estaria reescribiendo la ubicacion una y otra vez.
+//pero deja un rastro.
+
+//la razon: en cada funcion de movimiento se vuelve a ejecutar movePlayer.
+
 function movePlayer(){
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+  
+    
 }
     
 function moveUp(){
