@@ -57,10 +57,13 @@ function startGame(){
             //PROBLEMA: no se dibuja el emoji del jugador.
             //hasta que se presiona una tecla. entonces aparece
             //porque      game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y), no esta aqui. esta en la siguiente funcion.
+
+            //RESUELTO.
                         game.fillText(emoji, posX,posY)
 
         })
     });
+         game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 
 }
 
@@ -83,7 +86,7 @@ function startGame(){
 function movePlayer(){
     game.clearRect(0, 0, canvasSize, canvasSize)
     startGame()
-     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+
 }
     
 function moveUp(){
