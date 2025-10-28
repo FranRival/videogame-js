@@ -46,21 +46,25 @@ function startGame(){
             const posY = elementsSize * (rowI + 1)
 
 
-            if (col == 'O') {
+
+
+            if (playerPosition.x === undefined && col === 'O') {
                 playerPosition.x = posX
                 playerPosition.y = posY
                 console.log({playerPosition});
             }
 
-            game.fillText(emoji, posX,posY)
+            //PROBLEMA: no se dibuja el emoji del jugador.
+            //hasta que se presiona una tecla. entonces aparece
+            //porque      game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y), no esta aqui. esta en la siguiente funcion.
+                        game.fillText(emoji, posX,posY)
+
         })
     });
 
-
-
-    movePlayer()
-
 }
+
+
 
 
 //PROBLEMA: este codigo deja un rastro.
@@ -71,15 +75,15 @@ function startGame(){
 
 //43639bdee388992eb01499cafb33935ebdee1d13
 
+//resuelto sin crear una nueva funcion de renderMaps como lo decia ChatGPT. 
 
-function Eliminar(){
-          game.clearRect(0, 0, canvasSize, canvasSize)
-}
+
 
 
 function movePlayer(){
     game.clearRect(0, 0, canvasSize, canvasSize)
-    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+    startGame()
+     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 }
     
 function moveUp(){
