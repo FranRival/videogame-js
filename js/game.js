@@ -555,3 +555,6 @@ bea45883c9d143b2cac8ddbac2a5c6f698cf0689 --- no desaparece la calavera.
 //grupo de commits: busco hacer mas eficiente el codigo. menos pesado en 
 // 1- Redibujar el mapa al mover.
 // 2- HECHO. se utilizo mapImage. con un snapShot.
+
+//recordando como se vuelve a dibujar el emoji del jugador.
+//con clearRect arriba del forEach. borra todo. cordenadas del canvas. cordenadas del jugador. vuelve a dibujar todo. y tambien al jugador. pero esta vez + y - 1. lo que significa que se dibujar el emoji del jugador en un nuevo pixel. actualizado. 9160d99f80cc4d81ee9720a0b02fef96570f6b27
