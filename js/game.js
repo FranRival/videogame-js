@@ -554,4 +554,4 @@ bea45883c9d143b2cac8ddbac2a5c6f698cf0689 --- no desaparece la calavera.
 
 //grupo de commits: busco hacer mas eficiente el codigo. menos pesado en 
 // 1- Redibujar el mapa al mover.
-// 2- 
+// 2- HECHO. se utilizo mapImage. con un snapShot.
