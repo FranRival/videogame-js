@@ -542,3 +542,16 @@ playerPosition.x y playerPosition.y
 //intentando - clearReact
 //creariamos una nueva funcion. NAAA. reenombrar la funcion starGame. pero no lo hicimos. 
 //PROBLEMA: logramos hacer que se elimine el rastro que deja la calavera. pero ahora no aparece la calavera hasta que presionamos una tecla. es decir, la declaracion para que haga presencia la calavera, esta en otra funcion. 
+
+
+/*
+7b527a2308023d8ecabb42498c1efa851a90145d --- no desaparece la calavera.
+3ad81d43322bba324cde1c8e2eae7b3e54dcdf78 --- movePlayer is not defined.
+75da32b8740f2548e69af7fd929ffba18a3b4571 --- desaparece el mapa
+e55e71f16beb2aaad70dd52b8e64cb2b4af05f41 --- desaparece el mapa
+bea45883c9d143b2cac8ddbac2a5c6f698cf0689 --- no desaparece la calavera.
+*/
+
+//grupo de commits: busco hacer mas eficiente el codigo. menos pesado en 
+// 1- Redibujar el mapa al mover.
+// 2- 
