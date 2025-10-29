@@ -15,6 +15,8 @@ btnRight.addEventListener('click', moveRight)
 let canvasSize
 let elementsSize
 
+let mapImage
+
 const playerPosition = {
     x: undefined,
     y: undefined
@@ -55,15 +57,19 @@ function startGame(){
             game.fillText(emoji, posX,posY)
         })
     });
+    mapImage = game.getImageData(0,0,canvasSize,canvasSize)
 
-
-    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+    movePlayer()
 
 }
 
+//bucle infinito.
+//putImageData.
 
-
-//movePlayer no se esta usando. DELETE.
+function movePlayer(){
+    game.putImageData(mapImage,0,0)
+    game.clearRect(0,0,canvasSize,canvasSize)
+}
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
