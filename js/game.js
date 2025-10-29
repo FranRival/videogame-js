@@ -67,6 +67,11 @@ function startGame(){
 //putImageData: se borra todo el canvas. porque existe clearRect
 //eliminandola, y colocando el emoji del jugador.
 //pero con cada tecla, se vuelve a dibujar encima y encima. volviendo gruesa la capa debajo. como letras negritas.
+//que hace putImageData. guarda una captura de pantalla. en este caso, mapImage.
+//y ese mapImage, lo ejecuta en movePlayer. mejorando la funcionalidad. 
+//pero, aun asi, se seguira dibujando el canvas. 2 veces...
+//NO. se dibuja una vez, en startGame, y luego utiliza la variable mapImage para guardar el snapShot. 
+//luego, en movePlayer solo reutiliza el snapShot.
 
 function movePlayer(){
     game.putImageData(mapImage,0,0)
@@ -76,7 +81,7 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
     playerPosition.y -= elementsSize
-    startGame()
+    movePlayer()
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
