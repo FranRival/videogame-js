@@ -63,9 +63,7 @@ function startGame(){
 
 
 
-function movePlayer(){
-    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
-}
+//movePlayer no se esta usando. DELETE.
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
