@@ -64,11 +64,13 @@ function startGame(){
 }
 
 //bucle infinito.
-//putImageData.
+//putImageData: se borra todo el canvas. porque existe clearRect
+//eliminandola, y colocando el emoji del jugador.
+//pero con cada tecla, se vuelve a dibujar encima y encima. volviendo gruesa la capa debajo. como letras negritas.
 
 function movePlayer(){
     game.putImageData(mapImage,0,0)
-    game.clearRect(0,0,canvasSize,canvasSize)
+    game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
 }
     
 function moveUp(){
