@@ -69,6 +69,8 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 
+        console.log(playerPosition.x);
+        console.log(playerPosition.y);
     //playerPosition.y = posicion vertical.
     if ((playerPosition.y - elementsSize) < 0) {
         //elementSize: 1 de 10 de canvasSize.
@@ -76,7 +78,7 @@ function moveUp(){
         //esta linea se traduce: 
         //longitud en vertical total se va reduciendo.
         //?????
-        //el if calcula un valor temporal.
+        //que valor tiene .y
     }else{
         playerPosition.y -= elementsSize
         startGame()
