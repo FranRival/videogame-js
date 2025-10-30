@@ -70,9 +70,17 @@ function moveUp(){
 
     //playerPosition.y = posicion vertical.
     if ((playerPosition.y - elementsSize) < 0) {
+        //elementSize: 1 de 10 de canvasSize.
         console.log('OUT');
+        console.log(playerPosition.y);
+        console.log(elementsSize);
+        //esta linea se traduce: 
+        //longitud en vertical total se va reduciendo.
+        //??????
     }else{
         playerPosition.y -= elementsSize
+        console.log(playerPosition.y);
+        console.log(elementsSize);
         startGame()
     }
 }
