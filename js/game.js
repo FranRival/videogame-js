@@ -73,35 +73,31 @@ function moveUp(){
     if ((playerPosition.y - elementsSize) < 0) {
         //elementSize: 1 de 10 de canvasSize.
         console.log('OUT');
-        console.log(playerPosition.y);
-        console.log(elementsSize);
         //esta linea se traduce: 
         //longitud en vertical total se va reduciendo.
-        //?????.
-        //playerPosition esta,... encima de la O.
-        //porque?
-        //forEach recorre la celda. Una vez encuentra la O entra en el if. 
-        //ahi es donde toma las coordenadas de X y Y, y de ahi dibuja el jugador.
+        //?????
+        //el if calcula un valor temporal.
     }else{
         playerPosition.y -= elementsSize
-        console.log(playerPosition.y);
-        console.log(elementsSize);
         startGame()
     }
 }
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
     playerPosition.x -= elementsSize
+    //esta linea resta una celda a la coordenada.
     startGame()
 }
 function moveRight(){
     console.log('Me quiero mover hacia derecha');
     playerPosition.x += elementsSize
+    //esta linea resta una celda a la coordenada.
     startGame()
 }
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
     playerPosition.y += elementsSize
+    //esta linea resta una celda a la coordenada.
     startGame()
 }
 
