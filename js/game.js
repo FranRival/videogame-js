@@ -26,16 +26,15 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
-   // console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'center'
     const map = maps[0] 
     const mapsRows = map.trim().split('\n') 
     const mapRowCols = mapsRows.map(row => row.trim().split(''))
 
-
-
     game.clearRect(0,0,canvasSize, canvasSize);
+
+    //aqui se forma la cuadricula. 
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
@@ -45,10 +44,9 @@ function startGame(){
 
             if (col == 'O') {
                 if (!playerPosition.x && !playerPosition.y) {
+                    //aqui pregunta si los valores siguen siendo undefined.
                     playerPosition.x = posX
                     playerPosition.y = posY
-                    //console.log({playerPosition});
-                    
                 }
             }
 
@@ -70,6 +68,7 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 
+    //playerPosition.y = posicion vertical.
     if ((playerPosition.y - elementsSize) < 0) {
         console.log('OUT');
     }else{
@@ -115,6 +114,7 @@ function setCanvasSize(){
     canvas.setAttribute('height', canvasSize)
 
     elementsSize = canvasSize / 10
+    //mide el 10% de canvasSize. 
     
 
     startGame()
