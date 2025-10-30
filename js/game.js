@@ -560,3 +560,4 @@ bea45883c9d143b2cac8ddbac2a5c6f698cf0689 --- no desaparece la calavera.
 //con clearRect arriba del forEach. borra todo. cordenadas del canvas. cordenadas del jugador. vuelve a dibujar todo. y tambien al jugador. pero esta vez + y - 1. lo que significa que se dibujar el emoji del jugador en un nuevo pixel. actualizado. 9160d99f80cc4d81ee9720a0b02fef96570f6b27
 
 //explicado porque se dibuja el emoji del jugador sobre la puerta. 
+//la puerta O, y el playerPosition tienen las mismas coordenadas.
