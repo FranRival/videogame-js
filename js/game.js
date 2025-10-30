@@ -48,6 +48,9 @@ function startGame(){
                     //aqui pregunta si los valores siguen siendo undefined.
                     playerPosition.x = posX
                     playerPosition.y = posY
+
+                    console.log({x:posX, y:posY});
+                    
                 }
             }
 
