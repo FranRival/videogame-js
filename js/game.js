@@ -39,6 +39,7 @@ function startGame(){
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
             const posX = elementsSize * (colI + 1)
+                //mide el 10% de canvasSize. 
             const posY = elementsSize * (rowI + 1)
 
 
@@ -76,7 +77,11 @@ function moveUp(){
         console.log(elementsSize);
         //esta linea se traduce: 
         //longitud en vertical total se va reduciendo.
-        //??????
+        //?????.
+        //playerPosition esta,... encima de la O.
+        //porque?
+        //forEach recorre la celda. Una vez encuentra la O entra en el if. 
+        //ahi es donde toma las coordenadas de X y Y, y de ahi dibuja el jugador.
     }else{
         playerPosition.y -= elementsSize
         console.log(playerPosition.y);
@@ -122,7 +127,7 @@ function setCanvasSize(){
     canvas.setAttribute('height', canvasSize)
 
     elementsSize = canvasSize / 10
-    //mide el 10% de canvasSize. 
+
     
 
     startGame()
