@@ -561,3 +561,4 @@ bea45883c9d143b2cac8ddbac2a5c6f698cf0689 --- no desaparece la calavera.
 
 //explicado porque se dibuja el emoji del jugador sobre la puerta. 
 //la puerta O, y el playerPosition tienen las mismas coordenadas.
+//como se lee el if. que siginica la posicion.y + cual es el valor de la puerta O y como es que comparten valores mabos emojis. y porque el if no se ejecuta hasta...
