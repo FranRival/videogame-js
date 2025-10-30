@@ -48,7 +48,7 @@ function startGame(){
                     //aqui pregunta si los valores siguen siendo undefined.
                     playerPosition.x = posX
                     playerPosition.y = posY
-
+                    
                     console.log({x:posX, y:posY});
                     
                 }
@@ -60,6 +60,7 @@ function startGame(){
 
 
     game.fillText(emojis['PLAYER'], playerPosition.x, playerPosition.y)
+    console.log({x:playerPosition.x, y:playerPosition.y});
 
 }
 
@@ -72,16 +73,12 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 
-        console.log(playerPosition.x);
-        console.log(playerPosition.y);
     //playerPosition.y = posicion vertical.
     if ((playerPosition.y - elementsSize) < 0) {
         //elementSize: 1 de 10 de canvasSize.
         console.log('OUT');
         //esta linea se traduce: 
-        //longitud en vertical total se va reduciendo.
-        //?????
-        //que valor tiene .y
+        //toma el valor actual de playerPosition.y y restale elementSize. y el valor guardalo de nuevo en playerPosition.y
     }else{
         playerPosition.y -= elementsSize
         startGame()
