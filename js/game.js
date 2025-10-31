@@ -126,3 +126,47 @@ function setCanvasSize(){
 
 //como funciona while.
 //while recorre columnas, hasta qye sea verdadera la condicion.
+
+//
+
+function spinMapSafe(text) {
+    const lines = text.trim().split('\n').map(line => line.trim().split(''));
+    const emptyPositions = [];
+
+    lines.forEach((row, y) => {
+        row.forEach((cell, x) => {
+            if (cell === '-') emptyPositions.push({x, y});
+        });
+    });
+
+    const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0];
+    const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0];
+
+    const pathPositions = [];
+    let x = randomO.x, y = randomO.y;
+
+    // Horizontal primero
+    while (x !== randomI.x) {
+        pathPositions.push({x, y});
+        x += x < randomI.x ? 1 : -1;
+    }
+
+    // Vertical después
+    while (y !== randomI.y) {
+        pathPositions.push({x, y});
+        y += y < randomI.y ? 1 : -1;
+    }
+
+    // Incluir la posición de I
+    pathPositions.push({x, y});
+
+    const newMap = lines.map((row, y) => row.map((cell, x) => {
+        if (x === randomO.x && y === randomO.y) return 'O';
+        if (x === randomI.x && y === randomI.y) return 'I';
+        if (pathPositions.some(pos => pos.x === x && pos.y === y)) return '-';
+        if (cell === 'X') return Math.random() < 0.3 ? 'X' : '-';
+        return cell;
+    }).join('')).join('\n');
+
+    return newMap;
+}
