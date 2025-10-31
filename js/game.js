@@ -122,3 +122,7 @@ function setCanvasSize(){
 
 
 //no salirse del map
+
+
+//como funciona while.
+//while recorre columnas, hasta qye sea verdadera la condicion.
