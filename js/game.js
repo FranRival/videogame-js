@@ -34,21 +34,17 @@ function startGame(){
 
     game.clearRect(0,0,canvasSize, canvasSize);
 
-    //aqui se forma la cuadricula. 
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
             const posX = elementsSize * (colI + 1)
-                //mide el 10% de canvasSize. 
             const posY = elementsSize * (rowI + 1)
 
 
             if (col == 'O') {
                 if (!playerPosition.x && !playerPosition.y) {
-                    //aqui pregunta si los valores siguen siendo undefined.
                     playerPosition.x = posX
                     playerPosition.y = posY
-                    
                     console.log({x:posX, y:posY});
                     
                 }
@@ -72,13 +68,9 @@ function movePlayer(){
     
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
-
-    //playerPosition.y = posicion vertical.
     if ((playerPosition.y - elementsSize) < 0) {
-        //elementSize: 1 de 10 de canvasSize.
         console.log('OUT');
-        //esta linea se traduce: 
-        //toma el valor actual de playerPosition.y y restale elementSize. y el valor guardalo de nuevo en playerPosition.y
+
     }else{
         playerPosition.y -= elementsSize
         startGame()
@@ -87,19 +79,16 @@ function moveUp(){
 function moveLeft(){
     console.log('Me quiero mover hacia izquierda');
     playerPosition.x -= elementsSize
-    //esta linea resta una celda a la coordenada.
     startGame()
 }
 function moveRight(){
     console.log('Me quiero mover hacia derecha');
     playerPosition.x += elementsSize
-    //esta linea resta una celda a la coordenada.
     startGame()
 }
 function moveDown(){
     console.log('Me quiero mover hacia abajo');
     playerPosition.y += elementsSize
-    //esta linea resta una celda a la coordenada.
     startGame()
 }
 
