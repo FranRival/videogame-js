@@ -585,3 +585,10 @@ while (y !== randomI.y) {
 */
 //y=1, y2, y3, y4...
 //X4, Y3 - donde esta el objetivo.
+//la funcion obtiene las coordenadas de O y I antes de que empiecen los While.
+//desde mucho antes, espeficificamente en estas lineas:
+
+const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; //la puerta
+const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; //la salida
+
+//los while usan estas coordenadas como metas.
