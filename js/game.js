@@ -565,3 +565,23 @@ bea45883c9d143b2cac8ddbac2a5c6f698cf0689 --- no desaparece la calavera.
 
 //SPINNERTEXT
 //? - splice... 
+//WHILE
+//como funciona el recorrido de while.
+//estas lineas,...
+/*
+while (x !== randomI.x) {
+    pathPositions.push({x, y});
+    x += x < randomI.x ? 1 : -1;
+}
+*/
+//estan incrementando en x + 1 es decir, x=0. 
+//0 , 1 , 2, 3 ... valor de la x donde esta la primera coordenada del objetivo.
+//esta es para la Y
+/*
+while (y !== randomI.y) {
+    pathPositions.push({x, y});
+    y += y < randomI.y ? 1 : -1;
+}
+*/
+//y=1, y2, y3, y4...
+//X4, Y3 - donde esta el objetivo.
