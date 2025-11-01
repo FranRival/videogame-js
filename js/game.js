@@ -587,8 +587,17 @@ while (y !== randomI.y) {
 //X4, Y3 - donde esta el objetivo.
 //la funcion obtiene las coordenadas de O y I antes de que empiecen los While.
 //desde mucho antes, espeficificamente en estas lineas:
-
+//
 const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; //la puerta
 const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; //la salida
-
+//
 //los while usan estas coordenadas como metas.
+//
+//la funcion no busca evitar bombas. 
+//hace el camino, luego borra las bombas impidiendo que esten en el camino, y deja libres esos espacios.
+//
+//FUNCION EN ACCION
+//elige la O e I.
+//calcula la ruta recta horizontal + vertical
+//sobreescribe esa ruta y deja libres los espacios
+//coloca bombas aleatorias solamente en lugares que NO esten en la ruta
