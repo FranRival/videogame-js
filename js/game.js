@@ -140,7 +140,14 @@ function spinMapSafe(text) {
     });
 
     const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0];
+    //de aqui nacen las X y Y. pero para la entrada. El inicio.
+    //Math.floor(Math.random() * emptyPositions.length) es el indice. NO ES X.
+    //pero solo es un numero. solo eso.
+    //[0], en cambio, entra a los valores, X y Y.
+    //en esto, solo se obtiene un numero. 1,2,3,4,5,...
+    //pero [0] ordena ver que hay dentro de la caja de 1,2,3,4,5....
     const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0];
+    //aqui, para el final.
 
     const pathPositions = [];
     let x = randomO.x, y = randomO.y;
