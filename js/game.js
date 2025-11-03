@@ -608,3 +608,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //
 //randomO y randomI son objetos. porque emptyPosition son objetos
 //const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; - que significa esta linea en su totalidad.
+//
+//como se realiza el camino de O(X3,Y5) hacia I(X7,Y10)
