@@ -611,3 +611,4 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //
 //como se realiza el camino de O(X3,Y5) hacia I(X7,Y10)
 //X y Y. 2 tipos diferentes. El scope de arriba que finalizan cuando el segundo while, y el scope de abajo, cuando se rediuja el mapa.
+//Volviendo a analizar el codigo del while.
