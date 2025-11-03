@@ -603,5 +603,8 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //coloca bombas aleatorias solamente en lugares que NO esten en la ruta
 //SOME
 //metodo de array. devuelve true si al menos un elemento del array cumple con la condicion que se ponga en la funcion que se le pasa.
+//???
 //el camino matematico: 0,0 la puerta. 4,5. 00,01,02,03,04,10,11,12
+//
 //randomO y randomI son objetos. porque emptyPosition son objetos
+//const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; - que significa esta linea en su totalidad.
