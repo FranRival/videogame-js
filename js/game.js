@@ -161,7 +161,7 @@ function spinMapSafe(text) {
     //este while, recorre columnas. X.
     //no recorre todas las columnas del array. 
     // O(x=1,y=6)
-    //se va a la fila 6 primero porque: 
+    //se va a la fila 6 primero porque: en algun punto debe comenzar
     //se va a la fila 6. y comienza en X1 -> hasta empatar con I(x=4, y12)
     //es decir: X2, X3
     //X4 ya no.
