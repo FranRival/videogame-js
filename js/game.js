@@ -184,7 +184,11 @@ function spinMapSafe(text) {
 
     const newMap = lines.map((row, y) => row.map((cell, x) => {
         if (x === randomO.x && y === randomO.y) return 'O';
+        //X = random.x. y y=random.y
         if (x === randomI.x && y === randomI.y) return 'I';
+        //x=randomI.x y y=randomI.x
+        //X e I son indices. No hay puentes entre O e I y X y Y.
+        //TRAE TRAMPA Y SU TRUCO THIS MODOFOKO
         if (pathPositions.some(pos => pos.x === x && pos.y === y)) return '-';
         if (cell === 'X') return Math.random() < 0.3 ? 'X' : '-';
         return cell;
