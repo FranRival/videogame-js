@@ -182,6 +182,8 @@ function spinMapSafe(text) {
     // Incluir la posición de I
     pathPositions.push({x, y});
 
+
+    //ESTOS X y Y SON OTROS, --- NO SON COMO EL DE ARRIBA
     const newMap = lines.map((row, y) => row.map((cell, x) => {
         if (x === randomO.x && y === randomO.y) return 'O';
         //X = random.x. y y=random.y
