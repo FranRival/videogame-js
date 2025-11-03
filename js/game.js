@@ -169,6 +169,8 @@ function spinMapSafe(text) {
     //sigue siendo O(x=1, y=6)
     //el punto actual esta en (x=3, y=6)
 
+    /////el punto actual esta entre X4 y Y6,7,8,9,10,11 o 12
+
 
     //y aqui desde ese punto actual O(x3, y6)
     //es donde comienza el recorrido: 
