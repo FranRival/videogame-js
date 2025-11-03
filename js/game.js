@@ -610,3 +610,4 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //const randomO = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.length), 1)[0]; - que significa esta linea en su totalidad.
 //
 //como se realiza el camino de O(X3,Y5) hacia I(X7,Y10)
+//X y Y. 2 tipos diferentes. El scope de arriba que finalizan cuando el segundo while, y el scope de abajo, cuando se rediuja el mapa.
