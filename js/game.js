@@ -157,6 +157,12 @@ function spinMapSafe(text) {
         pathPositions.push({x, y});
         x += x < randomI.x ? 1 : -1;
     }
+    //WHILE no recorre filas.
+    //este while, recorre columnas. X.
+    //no recorre todas las columnas del array. 
+    // O(x=4,y=6)
+    //se va a la fila 6. y comienza en X0 -> hasta empatar con I(x=4, y7)
+    //
 
     // Vertical después
     while (y !== randomI.y) {
