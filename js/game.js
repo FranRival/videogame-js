@@ -614,3 +614,4 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //Volviendo a analizar el codigo del while.
 
 //"como se leen estas pinches lineas: const posX = elementsSize * (colI + 1) - delete11.
+//"como funciona esta linea: if ((playerPosition.y - elementsSize) < elementsSize) console.log('OUT')"
