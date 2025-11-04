@@ -39,6 +39,10 @@ function startGame(){
     mapRowCols.forEach((row, rowI)=> {
         row.forEach((col, colI)=>{
             const emoji = emojis[col]
+            //colI y rowI con indices.
+            //colI = 1 a 10 indice de columna
+            //rowI = 1 a 10 indice de fila.
+            //creo entender, colI puede ser 0 a 10 indice (longitud horizontal) y rowI puede ser 0 a 10 indice (longitud vertical), es decir, los parentesis quedarian asi: 0+1, 1+1, 2+1, 3+1, 4+1,5+1, 6+1, 7+1, 8+1,9+1 en ambas variables, rowI y colI. Esos valores son multiplicados por elementSize. Se obtiene un numero. Y eso representa posX o posY
             const posX = elementsSize * (colI + 1)
             const posY = elementsSize * (rowI + 1)
 
