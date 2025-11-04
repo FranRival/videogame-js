@@ -74,7 +74,9 @@ function movePlayer(){
 function moveUp(){
     console.log('Me quiero mover hacia arriba');
 
-    if ((playerPosition.y - elementsSize) < elementsSize) { //aqui esta el truco
+    //TRUCO HERE: mientras no entre en el if,... seguira moviendose. 
+    //cuando pocision vertical sea igual y menos que elementSize entra en el if
+    if ((playerPosition.y - elementsSize) < elementsSize) { 
         console.log('OUT');
     }else{
         playerPosition.y -= elementsSize
