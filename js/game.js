@@ -617,3 +617,6 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //"como funciona esta linea: if ((playerPosition.y - elementsSize) < elementsSize) console.log('OUT')"
 
 //analizando el codigo... el commit 62784f017e9b02803199bba114d8b9d9b1a090c8 tiene un problema. gifPosition y playerPosition son objetos. Pero enemisPosition es un array. Y se esta rellenando el array: el problema es que cada movimiento vuelve a iniciar la function startGame. sumando y duplicando el contenido. <-2024....
+//El problema:
+//el forEach recorre todas las filas y columnas del mapa. el mapa es de 10 x 10. es decir, 100 veces. por cada tecla. 100 veces se esta llenando el array de EnemisPosition.
+//la gravedad del rendimiento de enemisPosition depende de cuantas veces presiones cualquier tecla de movimiento
