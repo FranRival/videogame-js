@@ -620,3 +620,6 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //El problema:
 //el forEach recorre todas las filas y columnas del mapa. el mapa es de 10 x 10. es decir, 100 veces. por cada tecla. 100 veces se esta llenando el array de EnemisPosition.
 //la gravedad del rendimiento de enemisPosition depende de cuantas veces presiones cualquier tecla de movimiento
+
+
+//6f2c306bf94a30b1ba70ca76653e1cc59faa3421 - 
