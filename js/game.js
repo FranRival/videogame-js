@@ -622,4 +622,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //la gravedad del rendimiento de enemisPosition depende de cuantas veces presiones cualquier tecla de movimiento
 
 
-//6f2c306bf94a30b1ba70ca76653e1cc59faa3421 - 
+//6f2c306bf94a30b1ba70ca76653e1cc59faa3421 - forEach no crea copia. Trabaja sobre la referencia original.
+//*itera. pasa uno por uno cada elemento del array. sirve para leer, mutar, empujar o llenar 
