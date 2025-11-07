@@ -86,6 +86,13 @@ function movePlayer(){
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
 
+    //PlayerPosition es un solo objeto. con 2 valores.
+    //no crece. no se multiplica. no se llena cada tecla. solo sus valores cambian (x,y) en cada movimiento
+
+    //enemisPosition es un array. tiene muchos objetos iguales a playerPosition (X y Y), cada objeto representa una bomba en el mapa. cantidad de objetos: 10 - 100 o 1M
+
+    //enemiyColisioner no guarda toda la lista. no es un array. solo guarda un objeto. cuando enemyColisioner compara que playerPosition tenga las mismas coordenadas que una bomba, ahi se acaba el .find, y devuelve el objeto que coincidio.  
+
 
     const enemyColisioner = enemisPositions.find(enemy =>{
         const enemyColisionX = enemy.x == playerPosition.x
