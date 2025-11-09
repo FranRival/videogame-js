@@ -82,11 +82,11 @@ function levelWin(){
 
 
 function movePlayer(){
-    const gifCOlisionEnX = playerPosition.x.toFixed(3) == playerPosition.x.toFixed(3)
-    const gifCOlisionEnY = playerPosition.y.toFixed(3) == playerPosition.y.toFixed(3)
+    const gifCOlisionEnX = enemisPositions.x.toFixed(3) == playerPosition.x.toFixed(3)
+    const gifCOlisionEnY = enemisPositions.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
-    if (gifColition) {
+    if (gifColision) {
         levelWin()
     }else{
         levelFail()
