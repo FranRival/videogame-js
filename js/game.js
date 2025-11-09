@@ -625,3 +625,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //6f2c306bf94a30b1ba70ca76653e1cc59faa3421 - forEach no crea copia. Trabaja sobre la referencia original.
 //*itera. pasa uno por uno cada elemento del array. sirve para leer, mutar, empujar o llenar 
 //como funciona enemyColsioner, - delete12
+
+//hay un loop infinito. delete13.
