@@ -82,7 +82,9 @@ function levelWin(){
 
 
 function movePlayer(){
+    //SE ESTA COMPARANDO LA COLISION DE GIFT CONTRA ENEMISPOSITION.
     const gifCOlisionEnX = enemisPositions.x.toFixed(3) == playerPosition.x.toFixed(3)
+    //enemisPosition es un array. No es un objeto.
     const gifCOlisionEnY = enemisPositions.y.toFixed(3) == playerPosition.y.toFixed(3)
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
