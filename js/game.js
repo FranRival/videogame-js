@@ -80,17 +80,18 @@ function levelWin(){
     startGame()
 }
 
+function levelFail(){
+    console.log('FALLASTE');
+}
+
 
 function movePlayer(){
-    //SE ESTA COMPARANDO LA COLISION DE GIFT CONTRA ENEMISPOSITION.
-    const gifCOlisionEnX = enemisPositions.x.toFixed(3) == playerPosition.x.toFixed(3)
-    //enemisPosition es un array. No es un objeto.
-    //enemisPosition.x no existe.
-    //enemisPosition[INDICE].x o .y porque almacena objetos que si tienen esas .x y .y
-    //.toFixed es solo para numeros. no objetos ni arrays
-    const gifCOlisionEnY = enemisPositions.y.toFixed(3) == playerPosition.y.toFixed(3)
+     const gifCOlisionEnX = giftPosition.x == playerPosition.x
+    const gifCOlisionEnY = giftPosition.y == playerPosition.y
     const gifColision = gifCOlisionEnX && gifCOlisionEnY
 
+
+////ERRRORRRRRRRRRRRRRR
     if (gifColision) {
         levelWin()
     }else{
