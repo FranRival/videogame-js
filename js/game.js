@@ -626,4 +626,4 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //*itera. pasa uno por uno cada elemento del array. sirve para leer, mutar, empujar o llenar 
 //como funciona enemyColsioner, - delete12
 
-//hay un loop infinito. delete13.
+//hay un loop infinito. delete13. error de comparacion de array y objeto. error de levelFail ejecutandose siempre.
