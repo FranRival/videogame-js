@@ -627,3 +627,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //como funciona enemyColsioner, - delete12
 
 //hay un loop infinito. delete13. error de comparacion de array y objeto. error de levelFail ejecutandose siempre.
+
+//delete15 : startGame se esta ejecutando muchas veces. porque no entra en undefined en playerPosition X y Y?, el secreto: porque mientras ganes, tienes valores. y por tanto no puede entrar en el if de abajo.
