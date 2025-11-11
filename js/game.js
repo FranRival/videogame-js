@@ -58,6 +58,7 @@ function startGame(){
             const posY = elementsSize * (rowI + 1)
 
 
+            ////AQUI ESTA EL SECRETO.
             if (col == 'O') {
                 if (!playerPosition.x && !playerPosition.y) {
                     playerPosition.x = posX
@@ -80,8 +81,11 @@ function startGame(){
 }
 
 
+//FUNCION TRAMPA
+//regresa a los valores a 0. y ejecuta startGame. 
+//vamo a startGame
 function levelFail(){
-    console.log('Fallaste alv');//tenemos que hacer que la calavera reinicie sus coordenadas. 
+    console.log('Fallaste alv');
     playerPosition.x = undefined
     playerPosition.y = undefined
     startGame()
