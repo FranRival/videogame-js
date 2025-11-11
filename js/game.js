@@ -63,6 +63,7 @@ function startGame(){
             //2. porque no entra en undefined en playerPosition X y Y?
             //3. el secreto: porque mientras ganes, tienes valores. 
             //4. y por tanto no puede entrar en el if de abajo.
+            //5. la explicacion es: esa
             if (col == 'O') {
                 if (!playerPosition.x && !playerPosition.y) {
                     playerPosition.x = posX
