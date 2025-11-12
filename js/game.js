@@ -631,3 +631,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //delete15 : startGame se esta ejecutando muchas veces. porque no entra en undefined en playerPosition X y Y?, el secreto: porque mientras ganes, tienes valores. y por tanto no puede entrar en el if de abajo.
 
 //6fb5ace696f34da6b653416216ed251396940570 commit donde subimos ya de nivel. delete14 y 15. 
+
+//se creo la rama delete17. Array(lives) - para mostrar la cantidad de vidas del jugador. 
