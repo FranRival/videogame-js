@@ -633,3 +633,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //6fb5ace696f34da6b653416216ed251396940570 commit donde subimos ya de nivel. delete14 y 15. 
 
 //se creo la rama delete17. Array(lives) - para mostrar la cantidad de vidas del jugador. 
+
+//en el commit 34630dc1ecdcee9af9aeb1bb052a33c6650e9f1d la funcion de showLives esta agregando 3+ corazones por cada tecla presionada. heartArray.forEach recorre todo el heartArray llenando la cantidad de +3 espacios. porque se ejecuta startGame, y esta llama a cada momento a showLives. 
