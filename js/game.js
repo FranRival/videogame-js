@@ -38,6 +38,16 @@ window.addEventListener('keydown', moveByKeys)
 
 
 function startGame(){
+
+    /////////
+        console.log('=== DEBUG ===');
+        console.log('level:', level);
+        console.log('maps[level]:', maps[level]);
+        console.log('lives:', lives);
+        console.log('playerPosition:', playerPosition);
+//////////
+
+
     console.log({canvasSize, elementsSize});
     game.font= elementsSize + 'px Verdana'
     game.textAlign = 'end'
@@ -85,8 +95,9 @@ function startGame(){
 
 
 function showLives(){
-    spanLives.innerHTML = emojis['HEART']
-    Array(lives) //crear un array. no sabemos que tipo de elemento. string. o numero. o true. o false.
+    //spanLives.innerHTML = emojis['HEART']
+    //Array(lives) //ERROR: da 4 vidas y no 3. en el 4to intento es donde aparece el error de RangeError: Invalid array length
+    spanLives.innerHTML = Array(lives).fill(emojis['HEART']).join('');
 }
 
 function levelFail(){
