@@ -637,3 +637,7 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //en el commit 34630dc1ecdcee9af9aeb1bb052a33c6650e9f1d la funcion de showLives esta agregando 3+ corazones por cada tecla presionada. heartArray.forEach recorre todo el heartArray llenando la cantidad de +3 espacios. porque se ejecuta startGame, y esta llama a cada momento a showLives. 
 
 //bases de datos. MongoDB y MySQL. aprenderlos a conectar con JS.
+
+//creame una funcion de JS que sirva para crear archivos json dependiendo de la cantidad de datos que haya en el array de usuarios
+
+//entendiendo como funciona JS en el Fronted, backend. + bases de datos
