@@ -645,3 +645,11 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //DELETE18
 //cuando se colisiona contra el regalo, no se avanza de nivel. 
 //hay que reiniciar las coordenadas de playerPosition en X y Y.
+
+//f3d87e35e4dd1e16c29b2eaaf99a8cf603150822 - en este commit:
+//aun cuando llegas al regalo, el nivel no aumenta. tienes que presionar otra tecla para poder avanzar. 
+//starGame se ejecuta. redibuja todo, y llama a movePlayer.
+//movePlayer detecta que esta sobre el regalo. aumenta el nivel ++
+//pero justo ahi el ciclo de startGame termino. y todavia nose redibuja el siguiente nivel.
+//se tiene que rpesionar otra tecla para poder avanzar.
+//y la solucion es colocar playerPosotion X y Y a undefined. y tambien startGame()
