@@ -641,3 +641,7 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //creame una funcion de JS que sirva para crear archivos json dependiendo de la cantidad de datos que haya en el array de usuarios
 
 //entendiendo como funciona JS en el Fronted, backend. + bases de datos
+
+//DELETE18
+//cuando se colisiona contra el regalo, no se avanza de nivel. 
+//hay que reiniciar las coordenadas de playerPosition en X y Y.
