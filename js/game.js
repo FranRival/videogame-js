@@ -129,6 +129,11 @@ function gameWin(){
 }
 
 
+
+///ERROR EN ESTE COMMIT.
+//cuando se colisiona contra el regalo, no se avanza de nivel. 
+//hay que reiniciar las coordenadas de playerPosition en X y Y.
+
 function movePlayer(){
     const gifCOlisionEnX = playerPosition.x.toFixed(3) == giftPosition.x.toFixed(3)
     const gifCOlisionEnY = playerPosition.y.toFixed(3) == giftPosition.y.toFixed(3)
