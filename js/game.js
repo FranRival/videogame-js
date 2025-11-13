@@ -141,6 +141,9 @@ function movePlayer(){
 
     if (gifColision) {
         level++
+        playerPosition.x = undefined
+        playerPosition.y = undefined
+        startGame()
     }
 
 
