@@ -655,3 +655,8 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //y la solucion es colocar playerPosotion X y Y a undefined. y tambien startGame()
 
 //este commit: 7875a0c3c4beb34b846c1e8e3c4ddc2e8c81051f resuelve el problema de presionar una tecla extra para ver que se avance en el mapa. creo, es el delete18.
+//los 2 commits: cec76fe044b633287bc885a73ff7f65717ef6604, se tiene que presionar una tecla extra para poder avanzar. 
+//el commit que lo arregla: 7875a0c3c4beb34b846c1e8e3c4ddc2e8c81051f.
+//porque?
+//porque luego de la linea de levelWin(), estaba solo level++. 
+//con el commit mas reciente, 787... se agrega startGame()
