@@ -653,3 +653,5 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //pero justo ahi el ciclo de startGame termino. y todavia nose redibuja el siguiente nivel.
 //se tiene que rpesionar otra tecla para poder avanzar.
 //y la solucion es colocar playerPosotion X y Y a undefined. y tambien startGame()
+
+//este commit: 7875a0c3c4beb34b846c1e8e3c4ddc2e8c81051f resuelve el problema de presionar una tecla extra para ver que se avance en el mapa. creo, es el delete18.
