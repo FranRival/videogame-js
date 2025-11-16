@@ -668,3 +668,4 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //cuantas veces se usa la variable timeStar y en cuantas funciones.
 //analizando como funciona la funcion de tiempo.
 //showTime no es algo fijo. Ni almacenado. calcula cuanto tiempo ha pasado. cambia constantemente, no es estatico. No vive dentro de showTime.
+//setInterval(showTime, 100); - setInterval mostrara la funcion de showTime 10 veces cada segundo. por eso se ve como si fuera un cronometro. en 1 segundo se actualiza 10 veces imprimiendo showTIme
