@@ -660,3 +660,7 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //porque?
 //porque luego de la linea de levelWin(), estaba solo level++. 
 //con el commit mas reciente, 787... se agrega startGame()
+
+//d4e62b3bb4b607c5c71e1b4141872d29f9481ee9
+// date.now() - devuelve el numero en milisengundos, desde 1970 hasta now.
+//timeStar es el momento exacto en que comenzo el juego. playerTime
