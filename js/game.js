@@ -669,3 +669,11 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //analizando como funciona la funcion de tiempo.
 //showTime no es algo fijo. Ni almacenado. calcula cuanto tiempo ha pasado. cambia constantemente, no es estatico. No vive dentro de showTime.
 //setInterval(showTime, 100); - setInterval mostrara la funcion de showTime 10 veces cada segundo. por eso se ve como si fuera un cronometro. en 1 segundo se actualiza 10 veces imprimiendo showTIme
+
+//recordTime = +localStorage.getItem('record_time') y localStorage.setItem('record_time', playerTime)
+//const recordTime = +localStorage.getItem('record_time'); - GET. linea 134.
+//localStorage.setItem('record_time', playerTime); - SET. linea 142.
+//localStorage - base de datos que el navegador lee.
+//colocar el + en linea 134 es para convertir el string (aunque sea numero) en un numero.
+
+//const recordTime = +localStorage.getItem('record_time'); - esta linea, no esta leyendo nada. porque es primera vuelta. en la segunda vuelta, ya lee lo que dejo la linea 142 del set: localStorage.setItem('record_time', playerTime);
