@@ -681,3 +681,10 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //const recordTime = +localStorage.getItem('record_time'); esta linea solo se ejecuta cuando se llama gameWin()
 
 //...que pasa si la primera vez no se completa el juego? 
+
+//    } else {
+//      localStorage.setItem('record_time', playerTime);
+//      pResult.innerHTML = '--------)';
+ //   }
+
+//la linea 147, playerTime si tiene valores: Date.now() - timerStar. esto, es la primera vez que se juega el juego.
