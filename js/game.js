@@ -676,4 +676,8 @@ const randomI = emptyPositions.splice(Math.floor(Math.random() * emptyPositions.
 //localStorage - base de datos que el navegador lee.
 //colocar el + en linea 134 es para convertir el string (aunque sea numero) en un numero.
 
-//const recordTime = +localStorage.getItem('record_time'); - esta linea, no esta leyendo nada. porque es primera vuelta. en la segunda vuelta, ya lee lo que dejo la linea 142 del set: localStorage.setItem('record_time', playerTime);
+//const recordTime = +localStorage.getItem('record_time'); - esta linea, no esta leyendo nada. porque es primera vuelta. en la segunda vuelta, ya lee lo que dejo la linea 142 del set: localStorage.setItem('record_time', playerTime);\
+
+//const recordTime = +localStorage.getItem('record_time'); esta linea solo se ejecuta cuando se llama gameWin()
+
+//...que pasa si la primera vez no se completa el juego? 
